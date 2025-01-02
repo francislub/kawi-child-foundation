@@ -1,0 +1,1259 @@
+/* Common style start */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+button, div {
+    font-family: "Poppins", sans-serif;
+}
+
+/* html, body {
+    scroll-behavior: smooth;
+} */
+html, body {
+    scroll-behavior: smooth;
+    /* Added the following line to make the page responsive */
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullContainer {
+    width: 100%;
+}
+
+/* .container {
+    width: 1140px;
+    margin: auto;
+} */
+.container {
+    width: 100%;
+    margin: auto;
+    /* Set max-width to ensure responsiveness */
+}
+
+.section {
+    /* Add styles for the button container */
+    display: inline-block; /* Ensure the container behaves as a block element */
+    background-color: transparent; /* Set the background color of the container */
+    border: none; /* Remove default border */
+    outline: none; /* Remove default outline */
+    padding: 0; /* Remove default padding */
+    cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+.section:hover {
+    /* Add styles for hover effect */
+    /* For example, change background color */
+    background-color: whitesmoke;
+}
+
+.sectionTitle2 {
+    width: 500px;
+    border-bottom: 3px solid #1f8cad;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    /* text-transform: lowercase; */
+}
+
+.sectionTitle {
+    width: 300px;
+    border-bottom: 3px solid #1f8cad;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after {
+    display: inline-block;
+    margin-top: 6px;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #1f8cad;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
+
+/* Common style end */
+
+/* Home style start */
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* position: fixed; */
+    z-index: 2;
+    /* Added padding for smaller screens */
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Made the navigation responsive */
+    flex-wrap: wrap;
+}
+
+
+header .container .logo {
+    padding: 15px 0;
+    padding-left: 50px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li .link {
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    /* Added hover effect for smaller screens */
+    transition: 0.3s;
+}
+
+header nav ul li .link:hover {
+    background-color: #1f8cad;
+    border-radius: 5px;
+}
+/* Style for the background photos */
+.background-photos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.background-photo {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style for the navigation */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Sliding images for the how we are page */
+/* Specific styles for each banner */
+.bannera {
+    background-image: url(../public/images/4.jpg);
+}
+.banneri {
+    background-image: url(../public/images/4.jpg);
+}
+.bannerd {
+    background-image: url(../public/images/photo2.jpg);
+}
+
+.bannerc {
+    background-image: url(../public/images/photo2.jpg);
+}
+.banner {
+    background-image: url(../public/images/banner.jpg);
+}
+.bannerd {
+    background-image: url(../public/images/education.jpg);
+}
+.bannerj {
+    background-image: url(../public/images/photo5.jpg);
+}
+.bannerh {
+    background-image: url(../public/images/2.jpg);
+    background-image: url(../public/images/3.jpg);
+}
+.bannerw {
+    background-image: url(../public/images/3.jpg);
+}
+.bannera,.bannerc,.banner,.bannerd,.bannerj,.bannerh,.bannerd,.bannerw,.banneri {
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bannera h1, .bannerc h1,.banner h1,.bannerd h1,.bannerj h1,.bannerh h1,.bannerd h1,
+.bannerw h1,.banneri h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 100;
+}
+
+.bannera h1 span, .bannerc h1 span,.banner h1 span,.bannerd h1 span,.bannerj h1 span,.bannerh h1 span,.bannerd h1 span,
+.bannerw h1 span,.banneri h1 span {
+    background-color: #1f8cad;
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.bannera p,.bannerc p,.banner p, .bannerd p,.bannerj p,.bannerh p,.bannerd p,
+.bannerw p,.banneri p {
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+.bannera button,.bannerc button,.banner button,.bannerd button,.bannerj button,.bannerh button,.bannerd button,
+.bannerw button,.banneri button{
+    background-color: #1f8cad;
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* Home style end */
+
+
+/* About section start */
+
+/* #aboutSection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+} */
+
+#aboutSection .cards > div {
+    width: 350px;
+    background-color: #efefef;
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius: 5px;
+    height: auto;
+    border: 2px solid #a3a2a2;
+    transition: 0.4s;
+}
+
+#aboutSection .cards > div:hover {
+    border-color: #1f8cad;
+}
+
+#aboutSection .cards > div .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#aboutSection .cards > div p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#aboutSection .cards > div button {
+    border: 2px solid #a3a2a2;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#aboutSection .cards > div:hover button {
+    background-color: #1f8cad;
+    color: #fff;
+}
+
+/* About section end */
+
+/* Donation section start */
+
+.donate {
+    background-color: #e2e2e2;
+}
+
+.programs {
+    background-color: #e2e2e2;
+}
+
+
+.donate .boxContainer .box{
+    width: auto;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.programs .boxContainer .box{
+    width: auto;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.donate .boxContainer .box .cardImage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.donate .boxContainer .box .cardImage::after {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.programs .boxContainer .box .cardImage::after {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.donate .boxContainer .box:nth-child(1) .cardImage,
+.donate .boxContainer .box:nth-child(1) .cardImage::after {
+    background-image: url("../public/images/programs/1.jpg");
+}
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.donate .boxContainer .box:nth-child(1) .cardImage::after {
+    background-image: url("../public/images/programs/1.jpg");
+}
+
+.donate .boxContainer .box:nth-child(2) .cardImage,
+.donate .boxContainer .box:nth-child(2) .cardImage::after {
+    background-image: url("../public/images/programs/2.jpg");
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.donate .boxContainer .box:nth-child(2) .cardImage::after {
+    background-image: url("../public/images/programs/2.jpg");
+}
+
+.donate .boxContainer .box:nth-child(3) .cardImage,
+.donate .boxContainer .box:nth-child(3) .cardImage::after {
+    background-image: url("../public/images/programs/3.jpg");
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.donate .boxContainer .box:nth-child(3) .cardImage::after {
+    background-image: url("../public/images/programs/3.jpg");
+}
+
+.donate .boxContainer .box:nth-child(4) .cardImage,
+.donate .boxContainer .box:nth-child(4) .cardImage::after {
+    background-image: url("../public/images/programs/4.jpg");
+}
+
+.donate .boxContainer .box:hover .cardImage::after {
+    top: 100%;
+}
+
+.programs .boxContainer .box:hover .cardImage::after {
+    top: 100%;
+}
+
+.donate .boxContainer .box .donateTitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.programs .boxContainer .box .programTitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #1a1919;
+}
+
+.donate .boxContainer .box .donationCount {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+}
+
+.programs .boxContainer .box .programDesc {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+}
+
+.donate .boxContainer .box .donationCount span {
+    color: #1f8cad;
+}
+
+.programs .boxContainer .box .donationCount span {
+    color: #1f8cad;
+}
+
+.donate .boxContainer .box button {
+    position: relative;
+    left: 50%;
+    background-color: #1f8cad;
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.donate .boxContainer .box button:hover {
+    background-color: #197996;
+}
+
+.programs .boxContainer .box button {
+    position: relative;
+    left: 50%;
+    background-color: #1f8cad;
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.programs .boxContainer .box button:hover {
+    background-color: #197996;
+}
+
+
+/* Donate section end */
+
+/* Education section start */
+
+.education {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.education .educationImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.education .sectionTitle {
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+
+.education .educationContainer {
+    position: absolute;
+    background-color: #00000096;
+    width: 600px;
+    top: 35vh;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+}
+
+.education .educationContainer h3 {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+
+.education .educationContainer p {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+
+.education .educationContainer button {
+    background-color: #1f8cad;
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+}
+
+.education .educationContainer button:hover {
+    background-color: #197996;
+}
+
+/* Education section end */
+
+/* Gallery section starts here */
+
+.gallery .galleryContainer {
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.gallery .galleryContainer .item {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .galleryContainer Image {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .title {
+    position: absolute;
+    background-color: #efefef;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .item:hover .title {
+    opacity: 1;
+}
+
+.gallery .galleryContainer .item:hover Image {
+    transform: scale(1.2);
+}
+
+/* Gallery section ends here */
+
+/* Join us section starts here */
+
+.join {
+    background-image: url("../public//images/pattern.jpg");
+    color: #fff;
+}
+
+.join .joinTitle {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.join .joinTitle span {
+    font-weight: 800;
+}
+
+.join button {
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.join button.joinNow {
+    margin-right: 10px;
+    background-color: #424242;
+    color: #fff;
+}
+
+.join button.joinNow:hover {
+    background-color: #272626;
+}
+
+.join button.adoptBtn {
+    background-color: #efefef;
+    color: #575454;
+}
+
+.join button.adoptBtn:hover {
+    background-color: #c5c1c1;
+}
+
+
+/* Join us section ends here */
+
+/* Footer section starts here */
+
+footer {
+    background-color: #181818;
+    color: #7f7f7f;
+    font-size: 14px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+} */
+
+footer .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .linksContainer ul {
+    list-style-type: none;
+}
+
+footer .linksContainer ul li Link {
+    text-decoration: none;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .newsLetterContainer Image {
+    height: 40px;
+    margin-bottom: 11px;
+}
+
+footer .newsLetterContainer input {
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+
+/* Footer section ends here */
+
+
+/* Responsive code starts here */
+
+@media screen and (max-width: 1140px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .education .educationImage {
+        width: 1280px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .banner h1 {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        background-position-x: 45%;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .donate .boxContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .programs .boxContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/* @media screen and (max-width: 768px) {
+    header nav {
+        position: relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    header nav::after {
+        top: 17px;
+    }
+
+    header nav::before {
+        top: 7px;
+    }
+
+    header nav::after,
+    header nav::before {
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 5px;
+    }
+
+    header nav ul {
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
+
+    header nav:hover ul {
+        right: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    header nav ul li link {
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .banner {
+        background-position-x: 65%;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .banner p,
+    .banner h1 {
+        width: 70%;
+    }
+
+    #aboutSession .cards > div:hover {
+        width: 350px;
+    }
+
+    .donate .boxContainer {
+        column-gap: 10px;
+    }
+
+    .programs .boxContainer {
+        column-gap: 10px;
+    }
+
+    .donate .container {
+        padding-right: 10px;
+    }
+
+    .programs .container {
+        padding-right: 10px;
+    }
+
+    .education .educationContainer {
+        width: 96%;
+    }
+
+    .education .educationContainer h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .education .educationContainer p {
+        margin: 10px 0 20px;
+    }
+
+    .gallery .galleryContainer {
+        column-count: 2;
+    }
+    
+} */
+@media (min-width: 769px) {
+    header nav ul {
+        position: static;
+        display: flex;
+        right: auto;
+        background: none;
+        width: auto;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        background: none;
+    }
+
+    header nav ul li a {
+        display: inline;
+        padding: 0;
+        color: #000;
+    }
+
+    header nav button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner h1 {
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .banner button {
+        margin-bottom: 10px;
+    }
+
+    #aboutSection p {
+        text-align: justify;
+    }
+
+    #aboutSection .cards > div:hover {
+        width: 400px;
+        margin-top: 10px;
+        padding: 35px;
+    }
+
+    .donate .boxContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .programs .boxContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .education .educationImage {
+        width: 1400px;
+    }
+
+    .education .educationContainer {
+        width: 93%;
+    }
+
+    .gallery .galleryContainer {
+        column-count: 1;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .education .educationContainer h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .banner h1 {
+        margin-top: 100px;
+    }
+
+}
+.frame {
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.frame2 {
+    /* border: 2px solid #ddd; */
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.green-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* width: 350px; */
+}
+
+.blue-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* width: 350px; */
+}
+
+.blue-button1 {
+    background-color: #008CBA;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 350px;
+}
+.text-center {
+    text-align: center;
+}
+.background-color {
+    background-color: #f0f0f0;
+}
+
+.background-color1 {
+    background-color: #3207f1;
+    color: white;
+}
+.button-container {
+    display: flex;
+    justify-content: space-around; 
+    margin: 10px; 
+  }
+  
+  .button {
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;  
+    font-weight: bold; 
+  }
+
+/* Responsive styles */
+@media (min-width: 600px) {
+    .button-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+@media (min-width: 900px) {
+    button {
+        font-size: 20px;
+        padding: 14px 28px;
+    }
+}
+  
+  .previous, .next {
+    background-color: #3498db;  /* Blue color for previous and next buttons */
+    color: white;
+    width: 200px;
+    padding: 4px 0;
+    
+  }
+  
+  .close {
+    background-color: #e74c3c;  /* Red color for close button */
+    color: white;
+    width: 250px;
+    padding: 4px 1px;
+  }
+  
+  /* Hover effects for each button */
+  .previous:hover, .next:hover {
+    background-color: #2980b9;  /* Darker blue on hover */
+  }
+  
+  .close:hover {
+    background-color: #c0392b;  /* Darker red on hover */
+  }
+  
+  /* Initial disabled state for "Previous" (assuming context) */
+  .previous[aria-disabled="true"] {
+    background-color: #cccccc; /* Light gray for disabled state */
+    cursor: default; /* Remove pointer cursor */
+  }
+  .frame1 {
+    background-color: white;
+    width: 450px;
+    height: 470px;
+}
+.position-button1 {
+    width: 1100px; /* Adjust width as needed */
+    height: 220px; /* Adjust height as needed */
+    background-color: hsl(210, 10%, 84%); /* Change background color as needed */
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Ensures content inside the button doesn't overflow */
+    cursor: pointer;
+    position: relative; /* Required for pseudo-elements */
+}
+
+.position-button1:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.position-button1::before {
+    content: ''; /* Create a pseudo-element for top-left corner */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background-color: inherit; /* Inherit background color from parent */
+    clip-path: polygon(0 0, 0 100%, 100% 0); /* Clip path for top-left corner */
+}
+
+.background-gray {
+    background-color: #f0f0f0;
+}
+.background-blue {
+    background-color: #f3e5e5;
+}
+
+.position-button1::after {
+    content: ''; /* Create a pseudo-element for bottom-right corner */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   
+    background-color: inherit; /* Inherit background color from parent */
+    clip-path: polygon(0 100%, 100% 0, 100% 100%); /* Clip path for bottom-right corner */
+}
+
+.position-button1:hover h2 {
+    color: white; /* Change text color to white on hover */
+}
+
+.rounded-circle1 {
+    border-radius: 50%;
+    margin-right: 20px; /* Adjust margin as needed */
+    width: 200px; /* Adjust width */
+    height: 200px; /* Adjust height */
+}
+.rounded-circle2 {
+    border-radius: 50%;
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+.rounded1 {
+    width: 300px; /* Set the desired width */
+    height: 250px; /* Set the desired height */
+}
+.position-button {
+    width: 1200px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    /* border-radius: 50%;  */
+    background-color: hsl(210, 10%, 84%); /* Change background color as needed */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 auto; /* Centers the button horizontally */
+    overflow: hidden; /* Ensures content inside the button doesn't overflow */
+    cursor: pointer;
+}
+.position-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.round-button {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes the div round */
+    background-color: hsl(210, 10%, 84%); /* Change background color as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers the button horizontally */
+    overflow: hidden; /* Ensures content inside the button doesn't overflow */
+    cursor: pointer;
+}
+
+.button-content h1,
+.button-content h2 {
+    margin: 0; /* Remove default margin for h1 and h2 */
+}
+
+.round-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+.custom-button {
+    min-width: 100%; /* Minimum width for the button */
+    max-width: 100%; /* Maximum width relative to the parent container */
+}
+.box1 {
+    display: flex;
+}
+
+.cardImage1 {
+    /* Adjust the width and height as needed */
+    width: 200px;
+    height: 200px;
+    /* Add any additional styling here */
+}
+
+.programDesc1 {
+    /* Add padding, margin, or any other styling as needed */
+    padding: 20px;
+    /* This ensures text doesn't overlap with the photo */
+    flex-grow: 1;
+}
+
+
+/* Responsive code ends here */
+
+

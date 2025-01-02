@@ -1,2 +1,2 @@
-# kawi-child-foundation
-A system developmwnt for donating or funding students
+# charityAp-main
+An app for nalongo donation
