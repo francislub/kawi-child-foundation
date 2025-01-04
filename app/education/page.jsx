@@ -27,7 +27,7 @@ export default function HomePage() {
                 <div className="container space-y-10">
                     <h1>Education</h1>
                     <p className="text-lg">
-                        Nalongo Lwokyaza Foundation provides access to quality education for conflict affected children living in Uganda.
+                        Kawi Child Foundation provides access to quality education for conflict affected children living in Uganda.
                     </p>
                 </div>
             </div>
@@ -35,7 +35,7 @@ export default function HomePage() {
 
             <section className="fullContainer" id="aboutSection">
                 <div className="container ">
-                     <p  className="text-lg">Nalongo Lwokyaza Foundation serves one of the world's most vulnerable communities by providing education to those least likely to be educated: those who come from families that cannot afford.  A case story is from Mbirabira primary school.  We also link students to available scholarships. We raise awareness on alternative educational pathways.</p>
+                     <p  className="text-lg">Kawi Child Foundation serves one of the world's most vulnerable communities by providing education to those least likely to be educated: those who come from families that cannot afford.  A case story is from Mbirabira primary school.  We also link students to available scholarships. We raise awareness on alternative educational pathways.</p>
                     <br />
                     <div className="space-y-20">
                         <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
@@ -109,7 +109,7 @@ export default function HomePage() {
                             <div className="space-y-3">
                                 <h2 className="text-4xl text-[#1f8cad]">Scholarships</h2>
                                 <p className="text-lg">
-                                  Nalongo Lwokyaza Foundation offers financial scholarships or material support to students in Primary school, Secondary school or at the University. Financial support in form of school tuition fees, scholastic material, accommodation and mentorship from the Foundation or through the Foundation partnerships. Such educational measures enable students to realize their visions. 
+                                  Kawi Child Foundation offers financial scholarships or material support to students in Primary school, Secondary school or at the University. Financial support in form of school tuition fees, scholastic material, accommodation and mentorship from the Foundation or through the Foundation partnerships. Such educational measures enable students to realize their visions. 
                                 </p>
                                 <p className="text-lg">
                                   A need assessment of the individual students is made. Full scholarships are given to those who come from families that cannot afford paying tuition at all; Half Scholarships are given to those who have some few means. All this depends on the available resources from the Foundation and also in partnership with some schools. 
@@ -136,7 +136,7 @@ export default function HomePage() {
                         {/* & <span>SAVE LIVES</span> */}
                     </div>
                     <p className="text-lg">
-                      Nalongo Lwokyaza Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
+                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
                     </p>
                     <button className="joinNow rounded">
                     <Link href="/joinus">JOIN US </Link>

@@ -30,7 +30,7 @@ export default function HomePage() {
                 <div className="container">
                     <h1>Join Us</h1>
                     <p className="text-lg">
-                        Our foundation is committed to paying particular attention to children and youth within their programs who have suffered from violence and trauma, and aspires to sustain support for young people who have suffered trauma. Nalongo Lwokyaza Foundation also recognizes the power of functional education as a critical part of healing conflict and creating social cohesion in communities.
+                        Our foundation is committed to paying particular attention to children and youth within their programs who have suffered from violence and trauma, and aspires to sustain support for young people who have suffered trauma. Kawi Child Foundation also recognizes the power of functional education as a critical part of healing conflict and creating social cohesion in communities.
                     </p>
                     <button className="mb-5">
                         <Link href="#joinusSection">
@@ -46,7 +46,7 @@ export default function HomePage() {
                     <h2 className="sectionTitle text-[#1f8cad]">
                         JOIN OUR TEAM
                     </h2>
-                    <h1>Nalongo Lwokyaza Foundation is a family-based, non-profit organization established in 20xx in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor, - - - ,  - - -.</h1>
+                    <h1>Kawi Child Foundation is a family-based, non-profit organization established in 20xx in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor, - - - ,  - - -.</h1>
                     <br/>
                     <h1>You can partner with us in the following ways: </h1>
                     <ul>
@@ -130,7 +130,7 @@ export default function HomePage() {
                         {/* & <span>SAVE LIVES</span> */}
                     </div>
                     <p className="text-lg">
-                      Nalongo Lwokyaza Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
+                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
                     </p>
                     <button className="joinNow rounded">
                     <Link href="/joinus">JOIN US </Link>

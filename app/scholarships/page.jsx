@@ -31,13 +31,13 @@ export default function HomePage() {
                                 <div className="programDesc">
                                   <span className="text-xl text-[#1f8cad]">Scholarships</span>
                                     <p className="text-lg">
-                                      Nalongo Lwokyaza Foundation offers financial scholarships or material support to students in Primary school, Secondary school or at the University. Financial support in form of school tuition fees, scholastic material, accommodation and mentorship from the Foundation or through the Foundation partnerships. Such educational measures enable students to realize their visions. 
+                                      Kawi Child Foundation offers financial scholarships or material support to students in Primary school, Secondary school or at the University. Financial support in form of school tuition fees, scholastic material, accommodation and mentorship from the Foundation or through the Foundation partnerships. Such educational measures enable students to realize their visions. 
                                     </p>
                                     <br />
                                     <p className="text-lg">A need assessment of the individual students is made. Full scholarships are given to those who come from families that cannot afford paying tuition at all; Half Scholarships are given to those who have some few means. All this depends on the available resources from the Foundation and also in partnership with some schools. </p>
                                     <br />
                                     <span className="text-2xl text-[#1f8cad]">SCHOLARSHIP SELECTION PROCESS</span>
-                                    <p className="text-lg">Nalongo Lwokyaza Foundation identifies the students. There is an agreement with Mbirabira primary school to spot the poor and promising students. It is also possible for the students to apply for a scholarship.</p>
+                                    <p className="text-lg">Kawi Child Foundation identifies the students. There is an agreement with Mbirabira primary school to spot the poor and promising students. It is also possible for the students to apply for a scholarship.</p>
                                     <br />
                                     <h1 className="text-lg">Application forms are filled in and submitted to the scholarship committee. This criterion is as follows:</h1>
                                     <ul class="text-lg">
@@ -67,7 +67,7 @@ export default function HomePage() {
                         {/* & <span>SAVE LIVES</span> */}
                     </div>
                     <p className="text-lg">
-                      Nalongo Lwokyaza Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
+                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
                     </p>
                     <button className="joinNow rounded">
                     <Link href="/joinus">JOIN US </Link>

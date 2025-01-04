@@ -120,7 +120,7 @@ export default function ProgramsPage() {
                         {/* & <span>SAVE LIVES</span> */}
                     </div>
                     <p className="text-lg">
-                      Nalongo Lwokyaza Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
+                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
                     </p>
                     <button className="joinNow rounded">
                     <Link href="/joinus">JOIN US </Link>

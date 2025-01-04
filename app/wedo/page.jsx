@@ -50,9 +50,9 @@ export default function HomePage() {
                                 <div className="space-y-3">
                                     <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#1f8cad]">Education</h2>
                                     <p className="text-base sm:text-lg">
-                                       Nalongo Lwokyaza Foundation serves one of the world’s most vulnerable communities by providing education to those least likely to be educated: those who come from families that cannot afford.  A case story is from Mbirabira primary school.  
+                                       Kawi Child Foundation serves one of the world’s most vulnerable communities by providing education to those least likely to be educated: those who come from families that cannot afford.  A case story is from Mbirabira primary school.  
                                     </p> 
-                                    <button className="hover:bg-[#197996] w-32 sm:w-40 py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">
+                                    <button className="hover:bg-[#197996] w-32 sm:w-40 py-2 px-4 bg-blue-500 text-white font-bold rounded">
                                         <Link href="/education">
                                             Learn More
                                         </Link>
@@ -81,7 +81,7 @@ export default function HomePage() {
                                         <p className="text-lg">
                                           Our community-based program seeks to improve the livelihoods of the community members,
                                         </p> 
-                                        <button className="hover:bg-[#197996] w-40 py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">
+                                        <button className="hover:bg-[#197996] w-40 py-2 px-4 bg-blue-500 text-white font-bold rounded">
                                             <Link href="/community">
                                                 Learn More
                                             </Link>
@@ -104,7 +104,7 @@ export default function HomePage() {
                                     {/* <p className="text-lg">
                                     Bringing multiple tribes together to build innovative enterprises for sustainable peace, and development in the DRC. 
                                     </p>  */}
-                                    <button className="hover:bg-[#197996] w-40 py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">
+                                    <button className="hover:bg-[#197996] w-40 py-2 px-4 bg-blue-500 text-white font-bold rounded">
                                         <Link href="#">
                                             Learn More
                                         </Link>
@@ -129,7 +129,7 @@ export default function HomePage() {
                         {/* & <span>SAVE LIVES</span> */}
                     </div>
                     <p className="text-lg">
-                      Nalongo Lwokyaza Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
+                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
                     </p>
                     <button className="joinNow rounded">
                     <Link href="/joinus">JOIN US </Link>
