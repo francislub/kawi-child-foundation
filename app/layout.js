@@ -3,8 +3,8 @@ import './css/style.css';
 import Head from 'next/head';
 
 export const metadata = {
-    title: 'NALONGO FOUNDATION',
-    description: 'Developed by TroyMoses And Francis',
+    title: 'KAWI CHILD FOUNDATION UGANDA',
+    description: 'Developed by Francis',
 }
 
 export default function RootLayout({ children }) {
