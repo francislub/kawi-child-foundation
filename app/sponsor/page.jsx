@@ -3,10 +3,7 @@ import { useRef } from "react";
 
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import logoImage from "../public/images/logo1.png";
 import logoImage1 from "../public/icons/face.png";
 import logoImage2 from "../public/icons/ins.png";
 import logoImage3 from "../public/icons/link.png";

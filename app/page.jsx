@@ -3,7 +3,6 @@
 import Link from "next/link";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import logoImage from './public/images/logo1.png'
 import bannerImage from './public/images/1.jpg'
 import HeaderSection from "../components/header";
 import FooterSection from "../components/footer";

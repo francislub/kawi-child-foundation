@@ -1,30 +1,11 @@
 'use client';
 
 import Link from "next/link";
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import logoImage from '../public/images/logo1.png'
-import logoImage1 from '../public/icons/face.png'
-import logoImage2 from '../public/icons/ins.png'
-import logoImage3 from '../public/icons/link.png'
-import logoImage4 from '../public/icons/twi.png'
-import logoImage5 from '../public/icons/you.png'
+import React, { useState } from 'react';
 
-import bannerImage from '../public/images/1.jpg'
-import educationImage from '../public/images/gallery/8.jpg'
-import galleryImage1 from '../public/images/gallery/1.jpg'
-import galleryImage2 from '../public/images/gallery/2.jpg'
-import galleryImage3 from '../public/images/gallery/3.jpg'
-import galleryImage4 from '../public/images/gallery/4.jpg'
-import galleryImage5 from '../public/images/gallery/5.jpg'
-import galleryImage6 from '../public/images/gallery/6.jpg'
-import galleryImage7 from '../public/images/gallery/7.jpg'
-import galleryImage8 from '../public/images/gallery/8.jpg'
 
-import HeaderSection from "../components/header";
-import FooterSection from "../components/footer";
+import HeaderSection from "../../components/header";
+import FooterSection from "../../components/footer";
 
 export default function HomePage() {
     const [isOpen, setIsOpen] = useState(false);

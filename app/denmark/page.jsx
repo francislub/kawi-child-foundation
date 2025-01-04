@@ -2,23 +2,9 @@
 
 import Link from "next/link";
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Image from 'next/image';
-import { useRouter, useSearchParams } from 'next/navigation';
-import logoImage from '../public/images/logo1.png'
-import logoImage1 from '../public/icons/face.png'
-import logoImage2 from '../public/icons/ins.png'
-import logoImage3 from '../public/icons/link.png'
-import logoImage4 from '../public/icons/twi.png'
-import logoImage5 from '../public/icons/you.png'
-// import ChapterDenmarkModel from '../../models/chapter-denmark';
 
-
-import bannerImage from '../public/images/1.jpg'
-import educationImage from '../public/images/gallery/8.jpg'
-
-import HeaderSection from "../components/header";
-import FooterSection from "../components/footer";
+import HeaderSection from "../../components/header";
+import FooterSection from "../../components/footer";
 
 export default function HomePage() {
     const [isOpen, setIsOpen] = useState(false);
