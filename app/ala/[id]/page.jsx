@@ -4,8 +4,8 @@ import Link from "next/link";
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-import HeaderSection from "../../components/header";
-import FooterSection from "../../components/footer";
+import HeaderSection from "../../../components/header";
+import FooterSection from "../../../components/footer";
 
 export default function HomePage({params}) {
     const [isOpen, setIsOpen] = useState(false);

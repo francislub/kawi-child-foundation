@@ -4,16 +4,13 @@ import React, { useState, useEffect } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import logoImage from "../../public/images/logo1.png";
-import logoImage1 from "../../public/icons/face.png";
-import logoImage2 from "../../public/icons/ins.png";
-import logoImage3 from "../../public/icons/link.png";
-import logoImage4 from "../../public/icons/twi.png";
-import logoImage5 from "../../public/icons/you.png";
 import bannerImage from "../../public/images/education1.jpg";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import PaginationControls from "../../../components/PaginationControls";
+
+import HeaderSection from "../../../components/header";
+import FooterSection from "../../../components/footer";
 
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
@@ -130,7 +127,7 @@ export default function ProgramsPage({params}) {
 
       <section className="fullContainer -mt-20" id="aboutSection">
         <div className="container ">
-          <h2 className="lg:text-center">NALONGO FOUNDATION</h2>
+          <h2 className="lg:text-center">KAWI CHILD FOUNDATION</h2>
           <h5 className="lg:text-center text-[16px] lg:text-base">
             Choose below a child you would like to support
           </h5>
@@ -332,120 +329,7 @@ export default function ProgramsPage({params}) {
       </section>
       {/* About section ends here */}
 
-      <footer className="">
-        <div className="container flex md:flex-row md:justify-between md:space-x-10 space-y-5 flex-col">
-          <div className="newsLetterContainer md:w-96">
-            <Image
-              src={logoImage}
-              width={80}
-              className="rounded-md pb-5"
-              alt="Logo Image"
-            />
-            <p>
-              For 15 years, we have committed to providing access to quality
-              education for volunarable yet talented refugees. Donate today and
-              help us create more refugee change makers like Ntakamaze
-              Nziyonvira.
-            </p>
-            <input type="text" placeholder="Enter your email address" />
-          </div>
-          {/* NewsLetter container ends here */}
-
-          <div className="linksContainer">
-            <div className="title">Useful Links</div>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/" className="link">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="link">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs" className="link">
-                  Programs
-                </Link>
-              </li>
-              <li>
-                <Link href="/education" className="link">
-                  Education
-                </Link>
-              </li>
-              <li>
-                <Link href="/gallery" className="link">
-                  Gallery
-                </Link>
-              </li>
-              <li>
-                <Link href="/joinus" className="link">
-                  Join Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-          {/* LinksContainer ends here */}
-
-          <div className="connectContainer space-y-6">
-            <div className="title flex items-center">follow us</div>
-            <div className="flex items-center gap-4">
-              <Image
-                src={logoImage1}
-                width={50}
-                className="rounded-full pb-0 border-yellow-500 border-2 cursor-pointer hover:border-blue-500"
-                alt="Logo Image"
-              />
-              <Image
-                src={logoImage2}
-                width={50}
-                className="rounded-full pb-0 border-yellow-500 border-2 cursor-pointer hover:border-green-500"
-                alt="Logo Image"
-              />
-              <Image
-                src={logoImage3}
-                width={50}
-                className="rounded-full pb-0 border-yellow-500 border-2 cursor-pointer hover:border-red-500"
-                alt="Logo Image"
-              />
-              <Image
-                src={logoImage4}
-                width={50}
-                className="rounded-full pb-0 border-yellow-500 border-2 cursor-pointer hover:border-purple-500"
-                alt="Logo Image"
-              />
-              <Image
-                src={logoImage5}
-                width={50}
-                className="rounded-full pb-0 border-yellow-500 border-2 cursor-pointer hover:border-yellow-600"
-                alt="Logo Image"
-              />
-            </div>
-            <span>Mailing address:</span>
-            <br />
-            <span>Phone:</span>
-            <span>Email:</span> info@abcde.org
-            <br />
-            <p>
-              Contact - Uganda <br />
-            </p>
-            <p>
-              Contact - Denmark <br />
-            </p>
-            <p>
-              Contact - Switzerland <br />
-            </p>
-            <span>Mailing address:</span>
-            <br />
-            <span>Physical address:</span>
-            <br />
-            <span>Phone:</span> +256-
-            <span>Email:</span> info@abced.org
-          </div>
-          {/* ConnectContainer ends here */}
-        </div>
-      </footer>
+      <FooterSection />
     </div>
   );
 }
