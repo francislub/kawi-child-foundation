@@ -7,6 +7,7 @@ import bannerImage from './public/images/1.jpg'
 import HeaderSection from "../components/header";
 import FooterSection from "../components/footer";
 import Sponsor from "../components/sponsor";
+import Impact from "../components/impact";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function HomePage() {
@@ -87,56 +88,8 @@ export default function HomePage() {
                 </div>
             </section>
             {/* Education section ends here */}
-
-            <section className="programs" id="programsSection">
-                <div className="container mx-5">
-                    <h2 className="sectionTitle text-[#1f8cad]">
-                       OUR IMPACT
-                    </h2>
-
-                    <div className="boxContainer md:flex flex flex-col  md:justify-center md:space-x-12 md:flex-row">
-                       <Link href="/impact">   
-                            <div className="round-button" >
-                                <div className=" box flex flex-col">
-                                    <div className="round-button programDesc ">
-                                        <div className="round-button programDesc ">
-                                            <h1 className="sectionTitle text-[#1f8cad]">2,240</h1>
-                                            <br />
-                                            <div ><h2 >Conflict affected students we've educated </h2> </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link href="/impact"> 
-                            <div className="round-button">
-                                <div className=" box flex flex-col">
-                                    <div className="round-button programDesc ">
-                                        <div className="round-button programDesc ">
-                                            <h1 className="sectionTitle text-[#1f8cad]">48,372</h1>
-                                            <br />
-                                            <div ><h2 >People reached in our community service programs</h2> </div> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link href="/impact"> 
-                            <div className="round-button">
-                                <div className=" box flex flex-col">
-                                    <div className="round-button programDesc ">
-                                            <h1 className="sectionTitle text-[#1f8cad]">73,529</h1>
-                                            <br />
-                                            <div ><h2 >People reach in our Peace building programs </h2> </div> 
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    {/* Box container ends here */}
-
-                </div>
-            </section>
+             
+             <Impact />
             {/* our impact section ends here */}
 
             <section className="programs" id="programsSection">

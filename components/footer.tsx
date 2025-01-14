@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { 
   FaFacebookF, 
@@ -15,6 +14,7 @@ import {
   FaEnvelope,
   FaGlobe
 } from 'react-icons/fa'
+import Link from 'next/link'
 
 const SocialIcon = ({ icon: Icon, href, color }) => (
   <motion.a
@@ -79,13 +79,15 @@ export default function FooterSection() {
           {/* Newsletter Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-4">
+            {/* <Link href="/"> */}
               <Image 
                 src="/images/kawi.jpg"
-                width={80}
-                height={80}
+                width={120}
+                height={120}
                 alt="Logo"
                 className="rounded-lg"
               />
+              {/* <Link /> */}
               <h3 className="text-xl font-bold text-gray-800 dark:text-white">
                 Kiwi Child Foundation
               </h3>

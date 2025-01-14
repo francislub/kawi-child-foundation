@@ -13,7 +13,7 @@ export default function HeaderSection() {
     <div>
         <header>
                     <div className="container">
-                    {/* <Link href="/"> */}
+                    <Link href="/">
                         <Image 
                         src={"/images/kawi.jpg"} 
                         height={100} 
@@ -21,7 +21,7 @@ export default function HeaderSection() {
                         alt="Kawi Child Logo" 
                         className="rounded-md"
                         />
-                    {/* </Link> */}
+                    </Link>
 
                         <nav className="pt-5 relative">
                             <div className="flex items-center justify-between px-4 py-3 md:flex md:space-x-4">
