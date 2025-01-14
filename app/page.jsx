@@ -150,7 +150,7 @@ export default function HomePage() {
                             {/* <div className="donationCount">
                                 Donation Goal : <span>$9845</span>
                             </div> */}
-                            <button className="hover:bg-[#197996] w-40">
+                            <button className="hover:bg-[#197996] w-40 text-base">
                                 <Link href="/sponsor">
                                      Sponsor A Child
                                 </Link>
@@ -166,7 +166,7 @@ export default function HomePage() {
                             {/* <div className="donationCount">
                                 Donation Goal : <span>$9845</span>
                             </div> */}
-                            <button className="hover:bg-[#197996] w-40">
+                            <button className="hover:bg-[#197996] w-40 text-base">
                                 <Link href="/sponsor">
                                      Sponsor A Child
                                 </Link>
@@ -182,7 +182,7 @@ export default function HomePage() {
                             {/* <div className="donationCount">
                                 Donation Goal : <span>$9845</span>
                             </div> */}
-                            <button className="hover:bg-[#197996] w-40">
+                            <button className="hover:bg-[#197996] w-40 text-base">
                                 <Link href="/sponsor">
                                      Sponsor A Child
                                 </Link>
@@ -198,7 +198,7 @@ export default function HomePage() {
                             {/* <div className="donationCount">
                                 Donation Goal : <span>$9845</span>
                             </div> */}
-                            <button className="hover:bg-[#197996] w-40">
+                            <button className="hover:bg-[#197996] w-40 text-base">
                                 <Link href="/sponsor">
                                      Sponsor A Child
                                 </Link>
