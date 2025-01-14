@@ -9,6 +9,7 @@ import educationImage3 from '../public/images/programs/3.jpg';
 
 import HeaderSection from "../../components/header";
 import FooterSection from "../../components/footer";
+import Sponsor from "../../components/sponsor";
 
 export default function ProgramsPage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,19 +29,6 @@ export default function ProgramsPage() {
                     </p>
                 </div>
             </div>
-            {/* Home section ends here */}
-
-            {/* <section className="fullContainer" id="aboutSection">
-                <div className="container">
-                    <h2 className="sectionTitle text-[#1f8cad]">
-                        Our Programs
-                    </h2>
-                    <p className="text-lg font-normal">
-                        81% of the refugees are women and children, some of these women are widowed by the wars but have families to fend for. The refugees depend on subsistence farming but due to the most recent influx of refugees from the Congo, there is no more land for farming. Most families are forced to entirely depend on the monthly food aid of $8 per head from UNHCR. These families; therefore face many challenges in the new environment; they lack quality medical care, enough food, shelter, and most importantly, means to educate their children.<br /><br />
-                        This livelihood program generally seeks to address the actual needs for refugees through provision of seed funding and skills development in business management, livestock, and agricultural activities. We provide skills training and microfinance to the women to build their homes, feed and send their children to school. Assuredly, refugee families have supplementary income from these activities and can provide meals for their families and support their children in schools.
-                    </p>
-                </div>
-            </section> */}
 
             <section className="fullContainer -mt-10" id="aboutSection">
                 <div className="container ">
@@ -154,26 +142,6 @@ export default function ProgramsPage() {
 
                         </div>
 
-                        {/* <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
-
-                            <div className="space-y-3">
-                                <h2 className="text-4xl text-[#1f8cad]">Peace building</h2>
-                                <p className="text-lg">
-                                    University education for conflict-affected students is nearly impossible due to financial aid and admission difficulties for these students. We identify and provide college preparation support to potential students. This foundation connects these high school graduates to different college scholarship programs. We partner with scholarship programs such as the Mastercard Foundation Scholars Program (MCFSP), African Leadership Academy, universities like Bugema university for university education
-                                </p>
-                            </div>
-                            <div className="space-y-3">
-                                <h2 className="text-4xl text-[#1f8cad]">Anti-violence Vocational Tailoring Project</h2>
-                                <p className="text-lg">
-                                    University education for conflict-affected students is nearly impossible due to financial aid and admission difficulties for these students. We identify and provide college preparation support to potential students. This foundation connects these high school graduates to different college scholarship programs. We partner with scholarship programs such as the Mastercard Foundation Scholars Program (MCFSP), African Leadership Academy, universities like Bugema university for university education
-                                </p>
-                            </div>
-                            <Image 
-                                className="rounded w-full hidden xl:flex" 
-                                src={educationImage2}
-                            />
-
-                        </div> */}
                     </div>
                    
                     
@@ -181,23 +149,7 @@ export default function ProgramsPage() {
             </section>
             {/* About section ends here */}
             
-            <section className="join" id="joinSection">
-                <div className="container">
-                    <div className="joinTitle">
-                        SPONSOR A CHILD 
-                        {/* & <span>SAVE LIVES</span> */}
-                    </div>
-                    <p className="text-lg">
-                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
-                    </p>
-                    <button className="joinNow rounded">
-                    <Link href="/joinus">JOIN US </Link>
-                    </button>
-                    <button className="adoptBtn rounded">
-                       <Link href="/sponsor">Sponsor A Child Now</Link>
-                    </button>
-                </div>
-            </section>
+            <Sponsor />
 
             {/* Join us section ends here */}
 

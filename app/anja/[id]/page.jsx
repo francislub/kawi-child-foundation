@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 
 import HeaderSection from "../../../components/header";
 import FooterSection from "../../../components/footer";
+import Sponsor from "../../../components/sponsor";
 
 export default function HomePage({params}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -63,13 +64,6 @@ export default function HomePage({params}) {
                     </div>
                 ))}
 
-                    {/* <div className="cardImage md:flex w-1/2"  key={chapterDenmark._id}>
-                        <img src={chapterDenmark.photo} alt={chapterDenmark.name} className="w-full h-auto object-cover" />
-                    </div>
-                    <div className="programDesc w-1/2">
-                        <span className="text-xl text-[#1f8cad]">{chapterDenmark.name}</span>
-                        <h1>{chapterDenmark.description}</h1>
-                    </div> */}
                 </div>
             
                     {/* Box container ends here */}
@@ -78,23 +72,7 @@ export default function HomePage({params}) {
             </section>
             {/* Programs section ends here */}
             
-            <section className="join" id="joinSection">
-                <div className="container">
-                    <div className="joinTitle">
-                        SPONSOR A CHILD 
-                        {/* & <span>SAVE LIVES</span> */}
-                    </div>
-                    <p className="text-lg">
-                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
-                    </p>
-                    <button className="joinNow rounded">
-                    <Link href="/joinus">JOIN US </Link>
-                    </button>
-                    <button className="adoptBtn rounded">
-                       <Link href="/sponsor">Sponsor A Child Now</Link>
-                    </button>
-                </div>
-            </section>
+            <Sponsor />
 
             {/* Join us section ends here */}
 

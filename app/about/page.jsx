@@ -1,9 +1,9 @@
 'use client';
 
-import Link from "next/link";
 import React, { useState } from 'react';
 import HeaderSection from "../../components/header";
 import FooterSection from "../../components/footer";
+import Sponsor from "../../components/sponsor";
 
 
 export default function HomePage() {
@@ -88,67 +88,12 @@ export default function HomePage() {
                         className="cards text-lg flex flex-col md:flex-row justify-center items-center space-y-10 md:space-y-0 md:space-x-4 mt-8 font-semibold"
                     >
 
-                        {/* <div className="donationBox">
-                            <div className="title text-[#1f8cad]">
-                                Give Donation
-                            </div>
-                            <p className="">
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
-                            </p>
-                            <button className="text-[#1f8cad]">
-                                Donate Now
-                            </button>
-                        </div> */}
-                        {/* Donation Box end */}
-
-                        {/* <div className="volunteerBox">
-                            <div className="title text-[#1f8cad]">
-                                Become a volunteer
-                            </div>
-                            <p>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
-                            </p>
-                            <button className="text-[#1f8cad]">
-                                Become Now
-                            </button>
-                        </div> */}
-                        {/* Donation Box end */}
-
-                        {/* <div className="scholarshipBox">
-                            <div className="title text-[#1f8cad]">
-                                Give Scholarship
-                            </div>
-                            <p>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis harum eveniet odio sunt itaque in minus.
-                            </p>
-                            <button className="text-[#1f8cad]">
-                                Give Now
-                            </button>
-                        </div> */}
-                        {/* Donation Box end */}
-
                     </div>
                 </div>
             </section>
             {/* About section ends here */}
             
-            <section className="join" id="joinSection">
-                <div className="container">
-                    <div className="joinTitle">
-                        SPONSOR A CHILD 
-                        {/* & <span>SAVE LIVES</span> */}
-                    </div>
-                    <p className="text-lg">
-                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
-                    </p>
-                    <button className="joinNow rounded">
-                    <Link href="/joinus">JOIN US </Link>
-                    </button>
-                    <button className="adoptBtn rounded">
-                       <Link href="/sponsor">Sponsor A Child Now</Link>
-                    </button>
-                </div>
-            </section>
+            <Sponsor />
 
             {/* Join us section ends here */}
 

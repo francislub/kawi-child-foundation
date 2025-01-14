@@ -8,8 +8,8 @@ import educationImage1 from '../public/images/programs/1.jpg';
 import educationImage2 from '../public/images/programs/2.jpg';
 import educationImage3 from '../public/images/programs/3.jpg';
 
-import HeaderSection from "../../components/header";
 import FooterSection from "../../components/footer";
+import Sponsor from "../../components/sponsor";
 
 export default function HomePage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -74,11 +74,6 @@ export default function HomePage() {
                                   The Foundation seeks to help the best students to further their education by taking them to boarding secondary schools.
                                 </p>
                                         
-                                {/* <button className="bg-[#1f8cad] hover:bg-[#197996] px-3 py-1 text-white rounded">
-                                    <Link href='/education'>
-                                        Learn More
-                                    </Link>
-                                </button> */}
                             </div>
 
                         </div>
@@ -129,23 +124,7 @@ export default function HomePage() {
             </section>
             {/* About section ends here */}
             
-            <section className="join" id="joinSection">
-                <div className="container">
-                    <div className="joinTitle">
-                        SPONSOR A CHILD 
-                        {/* & <span>SAVE LIVES</span> */}
-                    </div>
-                    <p className="text-lg">
-                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
-                    </p>
-                    <button className="joinNow rounded">
-                    <Link href="/joinus">JOIN US </Link>
-                    </button>
-                    <button className="adoptBtn rounded">
-                       <Link href="/sponsor">Sponsor A Child Now</Link>
-                    </button>
-                </div>
-            </section>
+            <Sponsor />
 
             {/* Join us section ends here */}
 

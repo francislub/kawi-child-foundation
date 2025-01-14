@@ -9,6 +9,7 @@ import educationImage2 from '../public/images/programs/2.jpg';
 
 import HeaderSection from "../../components/header";
 import FooterSection from "../../components/footer";
+import Sponsor from "../../components/sponsor";
 
 export default function HomePage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +25,7 @@ export default function HomePage() {
 
                 <div className="container space-y-10">
                     <h1>Community Livelihood Programs</h1>
-                    {/* <p className="text-lg">
-                        Kawi Child Foundation has a unique operating model of education and serves one of the most vulnerable populations in the world. We are providing access to quality education for conflict affected children, living in the critically under-served refugee camps, in western Uganda.
-                    </p> */}
+                    
                 </div>
             </div>
             {/* Home section ends here */}
@@ -62,12 +61,7 @@ export default function HomePage() {
 
                             <div className="space-y-3">
                                 <h2 className="text-4xl text-[#1f8cad]">Land for food cultivation on a seasonal basis  </h2>
-                                {/* <p className="text-lg">
-                                We have a youth hub for running CIYOTA activities in the Kyangwali refugee settlement. This is also known as COBURWAS New Site, CONES-a farming or agriculture hub. With no land for the refugees to practice subsistence farming-sole means of dependence, we have established a demonstration farm on a plot of over 10 acres of land. 
-                                </p>
-                                <p className="text-lg">
-                                We have also introduced organic farming which will be an agribusiness enterprise to establish better farming methods and focus on solving this problem. It will involve applying animal manure to naturally sustain and maintain soil fertility and avoid other long term agronomic problems.
-                                </p> */}
+                                
                             </div>
 
                         </div>
@@ -76,9 +70,7 @@ export default function HomePage() {
 
                             <div className="space-y-3">
                                 <h2 className="text-4xl text-[#1f8cad]">Startup projects</h2>
-                                {/* <p className="text-lg">
-                                Targets Congolese refugee widows living in Kyangwali with orphans to feed and educate. CIYOTA provides small loans to such women who have projects such as; animal rearing, poultry, farming, small retail shops and those selling food items every market day. 30 widows received the loan since 2017 and 75 children attend school through this program. To reduce challenges such as failing to pay back loans, we built a vocational training center where women will meet more skilled and experienced business people, learn from their past mistakes as well as identify viable businesses in the refugee community. 
-                                </p> */}
+                               
                                 
                             </div>
                             <Image 
@@ -96,12 +88,7 @@ export default function HomePage() {
 
                             <div className="space-y-3">
                                 <h2 className="text-4xl text-[#1f8cad]">Food and non-food items </h2>
-                                {/* <p className="text-lg">
-                                This is a 6-month’s young women’s program that provides entrepreneurial skills to women who did not have a chance to attend formal education. The project focuses on tailoring where girls learn to sew clothes, bags and any other traditional wear in the refugee community. 
-                                </p>
-                                <p className="text-lg">
-                                The project has 38 women in the program, where 15 women have started their own tailoring businesses.
-                                </p> */}
+                                
                                 
                             </div>
 
@@ -113,23 +100,7 @@ export default function HomePage() {
             </section>
             {/* About section ends here */}
             
-            <section className="join" id="joinSection">
-                <div className="container">
-                    <div className="joinTitle">
-                        SPONSOR A CHILD 
-                        {/* & <span>SAVE LIVES</span> */}
-                    </div>
-                    <p className="text-lg">
-                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
-                    </p>
-                    <button className="joinNow rounded">
-                    <Link href="/joinus">JOIN US </Link>
-                    </button>
-                    <button className="adoptBtn rounded">
-                       <Link href="/sponsor">Sponsor A Child Now</Link>
-                    </button>
-                </div>
-            </section>
+            <Sponsor />
             {/* Join us section ends here */}
 
             <FooterSection />
