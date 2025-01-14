@@ -8,6 +8,7 @@ import HeaderSection from "../components/header";
 import FooterSection from "../components/footer";
 import Sponsor from "../components/sponsor";
 import Impact from "../components/impact";
+import Support from "../components/support";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function HomePage() {
@@ -57,36 +58,7 @@ export default function HomePage() {
             </section>
             {/* About section ends here */}
 
-            <section className="education" id="educationSection">
-                
-                {/* <video autoPlay loop muted>
-                    <source src={videoSrc} type="video/mp4" />
-                </video> */}
-                <div>
-                    <Image src={bannerImage} alt="An image" className="educationImage"/>
-                </div>
-                
-                <div className="container">
-                    <div className="sectionTitle">
-                        <h1 className="md:text-white text-black font-normal">Education</h1>
-                    </div>
-
-                    <div className="educationContainer">
-                        <h3>
-                            Education Is Essential For <br />
-                            <strong> BETTER FUTURE</strong>
-                        </h3>
-                        <p className="text-lg">
-                        Kawi Child Foundation serves one of the world's most vulnerable communities by providing education to those least likely to be educated: those who come from families that cannot afford. A case story is from Mbirabira primary school. We also link students to available scholarships. We raise awareness on alternative educational pathways. 
-                        </p>
-                        <button className="bg-[#1f8cad] hover:translate-x-2 hover:transition-all hover:bg-[#197996]">
-                            <Link href="/education">
-                                EXPLORE NOW
-                            </Link>
-                        </button>
-                    </div>
-                </div>
-            </section>
+            <Support />
             {/* Education section ends here */}
              
              <Impact />
