@@ -236,33 +236,32 @@ nav ul li a:hover {
 /* Sliding images for the how we are page */
 /* Specific styles for each banner */
 .bannera {
-    background-image: url(../public/images/4.jpg);
+    background-image: url(../../public/images/plap1.jpg);
 }
 .banneri {
-    background-image: url(../public/images/4.jpg);
+    background-image: url(../../public/images/chil.jpg);
 }
 .bannerd {
-    background-image: url(../public/images/photo2.jpg);
+    background-image: url(../../public/images/chil1.jpg);
 }
 
 .bannerc {
-    background-image: url(../public/images/photo2.jpg);
+    background-image: url(../../public/images/chil5.jpg);
 }
 .banner {
-    background-image: url(../public/images/banner.jpg);
+    background-image: url(../../public/images/chil6.jpg);
 }
 .bannerd {
-    background-image: url(../public/images/education.jpg);
+    background-image: url(../../public/images/chu2.jpg);
 }
 .bannerj {
-    background-image: url(../public/images/photo5.jpg);
+    background-image: url(../../public/images/chu3.jpg);
 }
 .bannerh {
-    background-image: url(../public/images/2.jpg);
-    background-image: url(../public/images/3.jpg);
+    background-image: url(../../public/images/two.jpg);
 }
 .bannerw {
-    background-image: url(../public/images/3.jpg);
+    background-image: url(../../public/images/chu3.jpg);
 }
 .bannera,.bannerc,.banner,.bannerd,.bannerj,.bannerh,.bannerd,.bannerw,.banneri {
     min-height: 100vh;
@@ -454,22 +453,22 @@ nav ul li a:hover {
 
 .donate .boxContainer .box:nth-child(1) .cardImage,
 .donate .boxContainer .box:nth-child(1) .cardImage::after {
-    background-image: url("../public/images/programs/1.jpg");
+    background-image: url("../../public/images/baby2.jpg");
 }
 
 .programs .boxContainer .box:nth-child(1) .cardImage,
 .donate .boxContainer .box:nth-child(1) .cardImage::after {
-    background-image: url("../public/images/programs/1.jpg");
+    background-image: url("../../public/images/baby2.jpg");
 }
 
 .donate .boxContainer .box:nth-child(2) .cardImage,
 .donate .boxContainer .box:nth-child(2) .cardImage::after {
-    background-image: url("../public/images/programs/2.jpg");
+    background-image: url("../../public/images/play.jpg");
 }
 
 .programs .boxContainer .box:nth-child(2) .cardImage,
 .donate .boxContainer .box:nth-child(2) .cardImage::after {
-    background-image: url("../public/images/programs/2.jpg");
+    background-image: url("../../public/images/play.jpg");
 }
 
 .donate .boxContainer .box:nth-child(3) .cardImage,

@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import bannerImage from "../public/images/education1.jpg";
+import bannerImage from "../../public/images/five.jpg";
 
 
 import HeaderSection from "../../components/header";
