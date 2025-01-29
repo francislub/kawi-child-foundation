@@ -36,7 +36,7 @@ export default function Support() {
               text="Children are out of school (UNHCR)"
             />
             <p className="text-center text-gray-600">
-              Help us educate refugee children by sponsoring a child today!
+              Help us educate children by sponsoring a child today!
             </p>
             <div className="flex justify-center">
               <motion.div
@@ -57,7 +57,7 @@ export default function Support() {
             <div className="grid gap-4">
               <StatisticPanel
                 number="86"
-                text="of refugee secondary school students"
+                text="of children in primary schools"
                 isPercentage={true}
               />
               <StatisticPanel
@@ -90,10 +90,11 @@ export default function Support() {
             className="space-y-6 p-6 lg:p-8 bg-blue-600 text-white rounded-xl"
           >
             <h2 className="text-3xl md:text-4xl font-bold">
-              Your support means education for more refugees
+              Your support means education for more children
             </h2>
             <p className="text-lg text-blue-100">
-              For 15 years, we have committed to providing access to quality education for vulnerable yet talented refugees. Donate today and help us create more refugee change makers like Ntakamaze Nziyonvira.
+            Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Mbale, Uganda. 
+            Dedicated to improving the lives of underprivileged children
             </p>
             <motion.div
               whileHover={{ scale: 1.05 }}

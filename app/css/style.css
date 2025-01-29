@@ -463,27 +463,27 @@ nav ul li a:hover {
 
 .donate .boxContainer .box:nth-child(2) .cardImage,
 .donate .boxContainer .box:nth-child(2) .cardImage::after {
-    background-image: url("../../public/images/play.jpg");
+    background-image: url("../../public/images/churchh.jpg");
 }
 
 .programs .boxContainer .box:nth-child(2) .cardImage,
 .donate .boxContainer .box:nth-child(2) .cardImage::after {
-    background-image: url("../../public/images/play.jpg");
+    background-image: url("../../public/images/zz.jpg");
 }
 
 .donate .boxContainer .box:nth-child(3) .cardImage,
 .donate .boxContainer .box:nth-child(3) .cardImage::after {
-    background-image: url("../public/images/programs/3.jpg");
+    background-image: url("../../public/images/churchh.jpg");
 }
 
 .programs .boxContainer .box:nth-child(3) .cardImage,
 .donate .boxContainer .box:nth-child(3) .cardImage::after {
-    background-image: url("../public/images/programs/3.jpg");
+    background-image: url("../../public/images/churchh.jpg");
 }
 
 .donate .boxContainer .box:nth-child(4) .cardImage,
 .donate .boxContainer .box:nth-child(4) .cardImage::after {
-    background-image: url("../public/images/programs/4.jpg");
+    background-image: url("../../public/images/two.jpg");
 }
 
 .donate .boxContainer .box:hover .cardImage::after {
