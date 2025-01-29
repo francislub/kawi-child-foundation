@@ -89,7 +89,7 @@ export default function FooterSection() {
               />
               {/* <Link /> */}
               <h3 className="text-xl font-bold text-gray-800 dark:text-white">
-                Kiwi Child Foundation
+                Kawi Child Foundation
               </h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
