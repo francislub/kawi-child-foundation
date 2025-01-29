@@ -93,7 +93,7 @@ export default function FooterSection() {
               </h3>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
-              For 15 years, we have committed to providing access to quality education for vulnerable yet talented refugees. Donate today and help us create more refugee change makers like Ntakamaze Nziyonvira.
+              For 3 years, we have committed to providing access to quality education for vulnerable yet talented children. Donate today and help us create more change makers.
             </p>
             <form onSubmit={handleSubscribe} className="space-y-3">
               <div className="relative">
@@ -164,13 +164,13 @@ export default function FooterSection() {
               />
               <ContactInfo 
                 icon={FaPhone} 
-                text="+256-XXX-XXX-XXX"
-                href="tel:+256XXXXXXX" 
+                text="+256-760-079-506"
+                href="tel:+256760079506" 
               />
               <ContactInfo 
                 icon={FaEnvelope} 
-                text="info@kawi.ac.ug"
-                href="mailto:info@kawi.ac.ug" 
+                text="Kawichildfoundationuganda5@gmail.com"
+                href="mailto:Kawichildfoundationuganda5@gmail.com" 
               />
               <ContactInfo 
                 icon={FaGlobe} 

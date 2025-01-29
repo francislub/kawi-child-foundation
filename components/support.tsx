@@ -33,7 +33,7 @@ export default function Support() {
           <div className="space-y-6">
             <StatisticPanel
               number="3.7 Million"
-              text="refugee children are out of school (UNHCR)"
+              text="Children are out of school (UNHCR)"
             />
             <p className="text-center text-gray-600">
               Help us educate refugee children by sponsoring a child today!
@@ -74,7 +74,7 @@ export default function Support() {
           <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-xl">
             <iframe
               src="https://www.youtube.com/embed/5rsgHbyl02Y?si=tp-F34eVxdf-RQ2v"
-              title="Kawi Child Organization to Transform Africa CIYOTA Subtitles"
+              title="Kawi Child Organization "
               className="absolute inset-0 w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

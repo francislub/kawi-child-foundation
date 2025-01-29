@@ -22,9 +22,9 @@ export default function HomePage() {
 
                 <div className="container">
                     <h1>WHO WE ARE</h1>
-                    <p className="text-lg">
+                    {/* <p className="text-lg">
                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
-                    </p>
+                    </p> */}
                 </div>
             </div>
             {/* Home section ends here */}
@@ -44,14 +44,25 @@ export default function HomePage() {
                             Our Mission
                         </h2>
                         <p className="text-lg">
-                          We seek to transform the lives of students, youth, families, and communities by enabling access to quality education for students and youth from families that cannot afford education for their children, to enable them gain skills for sustaining themselves, their families, communities and impart values that will enable them to become useful to society. 
+                        Committed to the poor
+
                         </p>
 
                         <h2 className="font-bold text-2xl text-[#1f8cad]">
                             Our Vision
                         </h2>
                         <p className="text-lg">
-                            Skills-related education and self-sustained youths, families and communities in local, national and continental Africa.
+                        Raising children to experience  the love of God, education and enjoy  good health 
+
+                        </p>
+                        <h2 className="font-bold text-2xl text-[#1f8cad]">
+                        Our Motto
+
+                        </h2>
+                        <p className="text-lg">
+                        Love one another (john 15:12)
+
+
                         </p>
 
                         <h2 className="font-bold text-2xl text-[#1f8cad]">

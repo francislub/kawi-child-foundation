@@ -99,25 +99,25 @@ const ImpactStat = ({ number, text, delay, href }: ImpactStatProps) => {
 export default function Impact() {
   const impactData = [
     {
-      number: '5,838',
-      text: 'Young people who received primary education',
+      number: '200',
+      text: 'Young people who received nursery education',
       delay: 0,
       href: '/impact/primary-education'
     },
     {
-      number: '1,171',
-      text: 'Young people who received secondary education',
+      number: '300',
+      text: 'Young people who received primary education',
       delay: 0.2,
       href: '/impact'
     },
     {
-      number: '+92',
-      text: 'University Scholarships',
+      number: '+20',
+      text: 'Young people who received Secondary Education',
       delay: 0.4,
       href: '/impact'
     },
     {
-      number: '+90,000',
+      number: '+150',
       text: 'Our reach via community engagement',
       delay: 0.6,
       href: "/impact"

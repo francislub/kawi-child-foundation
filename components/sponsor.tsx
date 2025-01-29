@@ -14,7 +14,8 @@ export default function Sponsor() {
                         {/* & <span>SAVE LIVES</span> */}
                     </div>
                     <p className="text-lg">
-                      Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
+                    Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Mbale, Uganda. 
+                    Dedicated to improving the lives of underprivileged children.
                     </p>
                     <button className="joinNow rounded">
                     <Link href="/joinus">JOIN US </Link>

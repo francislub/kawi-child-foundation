@@ -43,9 +43,14 @@ export default function HomePage() {
                     <h2 className="sectionTitle text-[#1f8cad]">
                         About Us 
                     </h2>
-                    <p className="text-lg font-normal text-gray-700">
-                        Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
+                    {/* <p className="text-lg font-normal text-gray-700">
+                        Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Mbale, Uganda
                 
+                    </p> */}
+                    <p className="text-lg font-normal text-gray-700">
+                        Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Mbale, Uganda. 
+                        Dedicated to improving the lives of underprivileged children, the foundation focuses on providing access to quality education, healthcare, and essential resources. Through various community programs, 
+                        mentorship initiatives, and partnerships with local organizations, Kawi Child Foundation aims to empower children with the skills and support they need to build a brighter future. The foundation also advocates for child rights, fostering a safe and nurturing environment for every child to thrive.
                     </p>
                     <div className="text-center mt-8">
                         <button className="bg-[#1f8cad] hover:bg-[#197996] text-white px-3 py-2 rounded">
