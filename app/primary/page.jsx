@@ -35,15 +35,22 @@ export default function HomePage() {
                         <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
 
                             <div className="space-y-3">
-                                <h2 className="text-4xl text-[#1f8cad]">Mbirabira Primary School</h2>
+                            <h2 className="text-4xl text-[#1f8cad]">Primary School Education</h2>
                                 <p className="text-lg">
-                                  Mbirabira is a primary school in Bunhya. Most people are local subsistence farmers. The nearest secondary school is Luubu Secondary school which is ten(10) kilometers away. Many students drop out of school after primary school because they cannot afford to walk the long distance and there is a high school drop out in the district due to early pregnancy among girls while boys prefer the quick money that can be got from harvesting sugar canes rather than spending many years in school after which getting a job is not guaranteed.   
+                                    Many students drop out of school after primary school because they cannot afford to walk the long distance.
                                 </p>
-                                <p className="text-lg">The foundation aims at offering opportunities to children from vulnerable families get an education and skills in order to be self sufficient in future.</p>
-
-                                <h2 className="text-2xl text-[#1f8cad]">PRIMARY SCHOOL PROGRAMS</h2>
-                                <p className="text-lg">We provide three meals a day to keep the children from absenteeism in search for food, we have a school van that takes 3 trips carrying children to and fro school and providing on-campus accommodation for orphaned, unaccompanied minors and children from farther communities within the refugee settlement.</p>
-
+                                <p className="text-lg">
+                                    The young people are also exposed to risks of sexual and gender-based violence, early teen pregnancies, and child labor, which significantly impact their education and overall well-being.
+                                </p>
+                                <p className="text-lg">
+                                    In many rural areas, lack of proper infrastructure, such as adequate school buildings, sanitation, and teaching materials, further exacerbates the challenges for primary school children. These barriers often discourage children from continuing their education and limit their future opportunities.
+                                </p>
+                                <p className="text-lg">
+                                    Additionally, cultural beliefs and gender biases may discourage girls from pursuing their education past the primary level, leading to a disparity in education access between boys and girls.
+                                </p>
+                                <p className="text-lg">
+                                    Initiatives such as providing scholarships, building more accessible schools, and raising awareness about the importance of education can help reduce these obstacles and encourage higher enrollment and retention rates at the primary level.
+                                </p>
                             </div>
                             
 
