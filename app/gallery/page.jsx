@@ -3,14 +3,14 @@
 import Link from "next/link";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import galleryImage1 from '../public/images/gallery/1.jpg'
-import galleryImage2 from '../public/images/gallery/2.jpg'
-import galleryImage3 from '../public/images/gallery/3.jpg'
-import galleryImage4 from '../public/images/gallery/4.jpg'
-import galleryImage5 from '../public/images/gallery/5.jpg'
-import galleryImage6 from '../public/images/gallery/6.jpg'
-import galleryImage7 from '../public/images/gallery/7.jpg'
-import galleryImage8 from '../public/images/gallery/8.jpg'
+import galleryImage1 from '../../public/images/baby.jpg'
+import galleryImage2 from '../../public/images/baby1.jpg'
+import galleryImage3 from '../../public/images/baby2.jpg'
+import galleryImage4 from '../../public/images/chil.jpg'
+import galleryImage5 from '../../public/images/chil1.jpg'
+import galleryImage6 from '../../public/images/chil2.jpg'
+import galleryImage7 from '../../public/images/chil5.jpg'
+import galleryImage8 from '../../public/images/chil6.jpg'
 
 import HeaderSection from "../../components/header";
 import FooterSection from "../../components/footer";
