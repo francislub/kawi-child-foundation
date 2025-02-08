@@ -22,9 +22,6 @@ export default function HomePage() {
 
                 <div className="container">
                     <h1>WHO WE ARE</h1>
-                    {/* <p className="text-lg">
-                     Kawi Child Foundation is a family-based, non-profit organization established in 2020 in Jinja, Uganda, in memory of the late Nalongo Mukyala Lwokyaza, a wife, mother, educator, mentor - in order to keep her legacy.
-                    </p> */}
                 </div>
             </div>
             {/* Home section ends here */}
@@ -69,7 +66,7 @@ export default function HomePage() {
                             Our Core Values
                         </h2>
                         <p className="text-lg">
-                            These values are based on the aspects that were highly esteemed by the late Nalongo.
+                            These values are based on the aspects that were highly esteemed.
                         </p>
                         <span className="text-bold font-semibold">Hard work, Morality, Godliness and the love for education </span>
                         <div className="text-lg">

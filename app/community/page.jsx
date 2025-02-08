@@ -41,7 +41,7 @@ export default function HomePage() {
                                  Our community-based program seeks to improve the livelihoods of the community members,
                                 </p>
                                 <p className="text-lg">
-                                We constructed a borehole that serves the people of Mbirabira village. 
+                                We constructed a borehole that serves the people. 
                                 </p>
                                 <p className="text-lg">
                                  We gave land for the construction of a local church.
