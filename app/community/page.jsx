@@ -53,7 +53,7 @@ export default function HomePage() {
                             </div>
                         </div>
 
-                        <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
+                        {/* <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
                             <Image 
                                 className="rounded1 w-full xl:flex" 
                                 src={educationImage1}
@@ -64,35 +64,11 @@ export default function HomePage() {
                                 
                             </div>
 
-                        </div>
+                        </div> */}
 
-                        <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
+                        
 
-                            <div className="space-y-3">
-                                <h2 className="text-4xl text-[#1f8cad]">Startup projects</h2>
-                               
-                                
-                            </div>
-                            <Image 
-                                className="rounded1 w-full xl:flex" 
-                                src={educationImage2}
-                            />
-
-                        </div>
-
-                        <div className="flex justify-between text-lg xl:flex-row flex-col  xl:space-x-20 space-y-4 xl:space-y-0">
-                            <Image 
-                                className="rounded1 w-full xl:flex" 
-                                src={educationImage2}
-                            />
-
-                            <div className="space-y-3">
-                                <h2 className="text-4xl text-[#1f8cad]">Food and non-food items </h2>
-                                
-                                
-                            </div>
-
-                        </div>
+                        
                     </div>
                    
                     
