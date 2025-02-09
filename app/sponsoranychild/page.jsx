@@ -29,7 +29,7 @@ export default function ProgramsPage({ searchParams }) {
     const fetchChildren = async () => {
       try {
         const response = await fetch(
-          "https://nalongo-dashboard-server.onrender.com/api/v1/children",
+          "https://kawi-dashboard-server.onrender.com/api/v1/children",
           {
             method: "GET",
             headers: {

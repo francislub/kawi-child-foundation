@@ -103,7 +103,7 @@ export default function HomePage() {
 
                         <div className="item">
                             <span className="title">
-                                Image Title
+                                Kawi Child Foundation
                             </span>
                             <Image src={galleryImage8} className="galleryImage"/>
                         </div>

@@ -16,7 +16,7 @@ export default function HomePage() {
 
     const fetchChapterGermany = async () => {
         try {
-        const response = await fetch(`https://nalongo-dashboard-server.onrender.com/api/v1/chapter-germany`);
+        const response = await fetch(`https://kawi-dashboard-server.onrender.com/api/v1/chapter-germany`);
         const data = await response.json();
         setChapterGermany(data);
         } catch (error) {

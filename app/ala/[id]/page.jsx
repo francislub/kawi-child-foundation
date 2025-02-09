@@ -21,7 +21,7 @@ export default function HomePage({params}) {
 
     const fetchChapterTeam = async () => {
         try {
-        const response = await fetch('https://nalongo-dashboard-server.onrender.com/api/v1/leaders');
+        const response = await fetch('https://kawi-dashboard-server.onrender.com/api/v1/leaders');
         const data = await response.json();
         const filteredData = data.filter(item => item._id === params.id);
         // console.log(filteredData);
