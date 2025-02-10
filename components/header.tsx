@@ -48,9 +48,9 @@ export default function Header() {
             title: "CHAPTERS",
             href: "/chapters",
             dropdown: [
-                { title: "DENMARK", href: "/denmark" },
-                { title: "SWITZERLAND", href: "/switzerland" },
-                { title: "GERMANY", href: "/germany" },
+                { title: "UGANDA", href: "/denmark" },
+                { title: "KENYA", href: "/switzerland" },
+                { title: "TANZANIA", href: "/germany" },
             ],
         },
         { title: "GALLERY", href: "/gallery" },

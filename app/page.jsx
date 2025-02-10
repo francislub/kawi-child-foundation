@@ -10,6 +10,8 @@ import Sponsor from "../components/sponsor";
 import Impact from "../components/impact";
 import Support from "../components/support";
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import { motion } from "framer-motion";
+import { FaGraduationCap, FaHandsHelping, FaTint } from "react-icons/fa";
 
 export default function HomePage() {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,210 +21,220 @@ export default function HomePage() {
     };
 
     return (
-        <div className="scroll-smooth">
-            <div className="fullContainer bannerh" id="homeSection">
+       <div className="scroll-smooth">
+             <div className="fullContainer bannerh" id="homeSection">
                 <HeaderSection />
                 {/* Header ends here */}
 
-                <div className="container">
-                    <h1>Education Unlocks Future</h1>
-                    <p className="text-lg">
-                        {/* For 15 years, we have committed to providing access to quality education for volunarable yet talented refugees. Donate today and help us create more refugee change makers like Ntakamaze Nziyonvira. */}
-                    </p>
-                    <button className="mb-5 hover:bg-[#197996]">
-                        <Link href="/sponsor">
-                            <span className="text-lg">Sponsor A Child Now</span>
-                        </Link>
-                    </button>
-                </div>
+                 {/* Content Container */}
+                 <div className="relative container mx-auto flex flex-col items-center justify-center min-h-screen text-center px-6">
+                     {/* Animated Heading */}
+                     <motion.h1
+                         className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+                         initial={{ opacity: 0, y: -20 }}
+                         animate={{ opacity: 1, y: 0 }}
+                         transition={{ duration: 0.8 }}
+                     >
+                         Education Unlocks Future
+                     </motion.h1>
+
+                     {/* Animated Description */}
+                     <motion.p
+                         className="text-lg text-gray-200 max-w-2xl mb-6"
+                         initial={{ opacity: 0, y: 10 }}
+                         animate={{ opacity: 1, y: 0 }}
+                         transition={{ duration: 1, delay: 0.3 }}
+                     >
+                         For 15 years, we have committed to providing access to quality education for vulnerable yet talented refugees.
+                         Donate today and help us create more refugee change-makers like Ntakamaze Nziyonvira.
+                     </motion.p>
+
+                     {/* Animated Button */}
+                     <motion.div
+                         initial={{ opacity: 0, scale: 0.8 }}
+                         animate={{ opacity: 1, scale: 1 }}
+                         transition={{ duration: 0.5, delay: 0.6 }}
+                     >
+                         <Link href="/sponsor">
+                             <button className="bg-[#197996] hover:bg-[#125d73] text-white text-lg font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300">
+                                 Sponsor A Child Now
+                             </button>
+                         </Link>
+                     </motion.div>
+                 </div>
             </div>
             {/* Home section ends here */}
 
-            <section className="fullContainer" id="aboutSection">
-                <div className="container">
-                    <h2 className="sectionTitle text-[#1f8cad]">
-                        About Us 
-                    </h2>
-                    {/* <p className="text-lg font-normal text-gray-700">
-                        Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Mbale, Uganda
-                
-                    </p> */}
-                    <p className="text-lg font-normal text-gray-700">
-                        Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Mbale, Uganda. 
-                        Dedicated to improving the lives of underprivileged children, the foundation focuses on providing access to quality education, healthcare, and essential resources. Through various community programs, 
-                        mentorship initiatives, and partnerships with local organizations, Kawi Child Foundation aims to empower children with the skills and support they need to build a brighter future. The foundation also advocates for child rights, fostering a safe and nurturing environment for every child to thrive.
-                    </p>
-                    <div className="text-center mt-8">
-                        <button className="bg-[#1f8cad] hover:bg-[#197996] text-white px-3 py-2 rounded">
-                            <Link href="/about">
-                                Explore More About Us
-                            </Link>
-                        </button>
-                    </div>
-                </div>
-            </section>
-            {/* About section ends here */}
+           <section className="fullContainer relative bg-gray-100 py-16" id="aboutSection">
+               <div className="container mx-auto px-6 lg:px-12">
 
-            <Support />
-            {/* Education section ends here */}
-             
-             <Impact />
-            {/* our impact section ends here */}
+                   {/* Title */}
+                   <motion.h2
+                       className="text-4xl md:text-5xl font-bold text-[#1f8cad] text-center mb-6"
+                       initial={{opacity: 0, y: -20}}
+                       animate={{opacity: 1, y: 0}}
+                       transition={{duration: 0.8}}
+                   >
+                       About Us
+                   </motion.h2>
 
-            <section className="programs" id="programsSection">
-                <div className="container mx-5">
-                    <h2 className="sectionTitle text-[#1f8cad]">
-                        OUR WORK
-                    </h2>
+                   <div className="grid md:grid-cols-2 gap-8 items-center">
+                       {/* Image Section */}
+                       <motion.div
+                           className="relative"
+                           initial={{opacity: 0, x: -20}}
+                           animate={{opacity: 1, x: 0}}
+                           transition={{duration: 0.8, delay: 0.2}}
+                       >
+                           <img
+                               src="/images/one.jpg"
+                               alt="About Kawi Child Foundation"
+                               className="rounded-lg shadow-lg w-full object-cover"
+                           />
+                       </motion.div>
 
-                    <div className="boxContainer md:flex grid md:justify-center md:space-x-12 md:flex-row ">
+                       {/* Text Section */}
+                       <motion.div
+                           className="text-lg font-normal text-gray-700 leading-relaxed"
+                           initial={{opacity: 0, x: 20}}
+                           animate={{opacity: 1, x: 0}}
+                           transition={{duration: 0.8, delay: 0.3}}
+                       >
+                           <p>
+                               Kawi Child Foundation is a family-based, non-profit organization established in 2023 in
+                               Luwero, Uganda. Dedicated to improving the lives of underprivileged children, the foundation focuses on
+                               providing access
+                               to quality education, healthcare, and essential resources.
+                           </p>
 
-                        <div className="box flex flex-col hover:bg-gray-100 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
-                            <div className="cardImage md:flex"></div>
-                            <div className="programTitle px-5">
-                                <span className="text-xl text-[#1f8cad]">EDUCATION PROGRAMS</span>
-                            </div>
-                            {/* <div className="programDesc">
-                                <p className="px-2">
-                                    We empower individuals through knowledge. 
-                                    <br />Our educational programs provide essential skills and resources, focusing on all education levels levels, literacy, STEM fields, job training. By investing in education, we unlock potential and create pathways to a brighter future. 
-                                </p>
-                            </div> */}
-                            <button className="hover:bg-[#197996] w-40">
-                                <Link href="/education">
-                                    Explore More
-                                </Link>
-                            </button>
-                        </div>
-                        {/* Box ends here */}
+                           <p className="mt-4">
+                               Through various community programs, mentorship initiatives, and partnerships with local
+                               organizations,
+                               we empower children with the skills and support they need to build a brighter future. We
+                               also advocate for
+                               child rights, fostering a safe and nurturing environment for every child to thrive.
+                           </p>
 
-                        <div className="box flex flex-col hover:bg-gray-100 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
-                            <div className="cardImage md:flex"></div>
-                            <div className="programTitle px-5">
-                                <span className="text-xl text-[#1f8cad]">COMMUNITY BUILDING</span>
-                            </div>
-                            {/* <div className="programDesc">
-                                <p className="px-2">
-                                    We believe strong communities are the foundation<br /> for positive change. Through workshops, events, and mentorship programs, we foster collaboration, build trust, and empower communities to solve problems together. We create a space for shared goals and lasting connections.
-                                </p>
-                            </div> */}
-                            <button className=" w-40">
-                                <Link href="/community">
-                                    Explore More
-                                </Link>
-                            </button>
-                        </div>
-                        {/* Box ends here */}
+                           {/* Button */}
+                           <div className="mt-6">
+                               <motion.div
+                                   initial={{opacity: 0, scale: 0.9}}
+                                   animate={{opacity: 1, scale: 1}}
+                                   transition={{duration: 0.5, delay: 0.5}}
+                               >
+                                   <Link href="/about">
+                                       <button
+                                           className="bg-[#1f8cad] hover:bg-[#197996] text-white text-lg font-semibold px-5 py-3 rounded-full shadow-md transition-all duration-300">
+                                           Explore More About Us
+                                       </button>
+                                   </Link>
+                               </motion.div>
+                           </div>
+                       </motion.div>
+                   </div>
+               </div>
+           </section>
+           {/* About section ends here */}
 
-                        <div className="box flex flex-col hover:bg-gray-100 hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
-                            <div className="cardImage md:flex"></div>
-                            <div className="programTitle px-5">
-                            <span className="text-xl text-[#1f8cad]">CLEAN WATER FOR PEOPLE</span>
-                            </div>
-                            {/* <div className="programDesc">
-                                <p className="px-2">
-                                    Access to clean water is a fundamental<br /> human right. We implement sustainable solutions like well construction, rainwater harvesting, and hygiene education. By availing clean water, we promote health, dignity, and a foundation for a thriving community. 
-                                </p>
-                            </div> */}
-                            <button className=" w-40">
-                                <Link href="/programs">
-                                    Explore More
-                                </Link>
-                            </button>
-                        </div>
-                        {/* Box ends here */}
+           <Support/>
+           {/* Education section ends here */}
 
-                    </div>
-                    {/* Box container ends here */}
+           <Impact/>
+           {/* our impact section ends here */}
 
-                </div>
-            </section>
-            {/* Programs section ends here */}
+           <section className="programs bg-gray-100 py-16" id="programsSection">
+               <div className="container mx-auto px-6 lg:px-12">
 
-            <section className="donate" id="donateSection">
-                <div className="container mx-5">
-                    <h2 className="sectionTitle text-[#1f8cad]">
-                       SPONSOR A CHILD
-                    </h2>
+                   {/* Title */}
+                   <motion.h2
+                       className="text-4xl md:text-5xl font-bold text-[#1f8cad] text-center mb-12"
+                       initial={{opacity: 0, y: -20}}
+                       animate={{opacity: 1, y: 0}}
+                       transition={{duration: 0.8}}
+                   >
+                       OUR WORK
+                   </motion.h2>
 
-                    <div className="boxContainer md:flex grid  md:justify-center md:space-x-12 md:flex-row">
+                   {/* Grid Layout */}
+                   <div className="grid md:grid-cols-3 gap-8">
 
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="donateTitle px-5">
-                                Education To Every Child
-                            </div>
-                            {/* <div className="donationCount">
-                                Donation Goal : <span>$9845</span>
-                            </div> */}
-                            <button className="hover:bg-[#197996] w-40 text-base">
-                                <Link href="/sponsor">
-                                     Sponsor A Child
-                                </Link>
-                            </button>
-                        </div>
-                        {/* Box ends here */}
+                       {/* Education Programs */}
+                       <motion.div
+                           className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transition-all hover:scale-105 hover:shadow-2xl"
+                           initial={{opacity: 0, y: 20}}
+                           animate={{opacity: 1, y: 0}}
+                           transition={{duration: 0.8}}
+                       >
+                           <FaGraduationCap className="text-[#1f8cad] text-5xl mb-4"/>
+                           <h3 className="text-xl font-semibold text-[#1f8cad] mb-3">
+                               EDUCATION PROGRAMS
+                           </h3>
+                           <p className="text-gray-700">
+                               Empowering individuals through knowledge with literacy, STEM education, and job training.
+                           </p>
+                           <Link href="/education">
+                               <button
+                                   className="mt-4 bg-[#1f8cad] hover:bg-[#197996] text-white px-4 py-2 rounded-full transition-all">
+                                   Explore More
+                               </button>
+                           </Link>
+                       </motion.div>
 
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="donateTitle px-5">
-                                Make Life Easier For Them
-                            </div>
-                            {/* <div className="donationCount">
-                                Donation Goal : <span>$9845</span>
-                            </div> */}
-                            <button className="hover:bg-[#197996] w-40 text-base">
-                                <Link href="/sponsor">
-                                     Sponsor A Child
-                                </Link>
-                            </button>
-                        </div>
-                        {/* Box ends here */}
+                       {/* Community Building */}
+                       <motion.div
+                           className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transition-all hover:scale-105 hover:shadow-2xl"
+                           initial={{opacity: 0, y: 20}}
+                           animate={{opacity: 1, y: 0}}
+                           transition={{duration: 0.8, delay: 0.2}}
+                       >
+                           <FaHandsHelping className="text-[#1f8cad] text-5xl mb-4"/>
+                           <h3 className="text-xl font-semibold text-[#1f8cad] mb-3">
+                               COMMUNITY BUILDING
+                           </h3>
+                           <p className="text-gray-700">
+                               Strengthening communities through workshops, mentorship, and collaboration.
+                           </p>
+                           <Link href="/community">
+                               <button
+                                   className="mt-4 bg-[#1f8cad] hover:bg-[#197996] text-white px-4 py-2 rounded-full transition-all">
+                                   Explore More
+                               </button>
+                           </Link>
+                       </motion.div>
 
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="donateTitle px-5">
-                                Dedicating To Helping Kids
-                            </div>
-                            {/* <div className="donationCount">
-                                Donation Goal : <span>$9845</span>
-                            </div> */}
-                            <button className="hover:bg-[#197996] w-40 text-base">
-                                <Link href="/sponsor">
-                                     Sponsor A Child
-                                </Link>
-                            </button>
-                        </div>
-                        {/* Box ends here */}
+                       {/* Clean Water */}
+                       <motion.div
+                           className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transition-all hover:scale-105 hover:shadow-2xl"
+                           initial={{opacity: 0, y: 20}}
+                           animate={{opacity: 1, y: 0}}
+                           transition={{duration: 0.8, delay: 0.4}}
+                       >
+                           <FaTint className="text-[#1f8cad] text-5xl mb-4"/>
+                           <h3 className="text-xl font-semibold text-[#1f8cad] mb-3">
+                               CLEAN WATER FOR PEOPLE
+                           </h3>
+                           <p className="text-gray-700">
+                               Providing sustainable water solutions to promote health and dignity.
+                           </p>
+                           <Link href="/programs">
+                               <button
+                                   className="mt-4 bg-[#1f8cad] hover:bg-[#197996] text-white px-4 py-2 rounded-full transition-all">
+                                   Explore More
+                               </button>
+                           </Link>
+                       </motion.div>
 
-                        <div className="box flex flex-col">
-                            <div className="cardImage"></div>
-                            <div className="donateTitle px-5">
-                                Clean Water For People
-                            </div>
-                            {/* <div className="donationCount">
-                                Donation Goal : <span>$9845</span>
-                            </div> */}
-                            <button className="hover:bg-[#197996] w-40 text-base">
-                                <Link href="/sponsor">
-                                     Sponsor A Child
-                                </Link>
-                            </button>
-                        </div>
-                        {/* Box ends here */}
+                   </div>
+               </div>
+           </section>
+           {/* Programs section ends here */}
 
-                    </div>
-                    {/* Box container ends here */}
 
-                </div>
-            </section>
-            {/* Donate section ends here */}
-            
-            <Sponsor />
-            {/* Join us section ends here */}
+           <Sponsor/>
+           {/* Join us section ends here */}
 
-            {/* footer */}
-            <FooterSection />
-        </div>
+           {/* footer */}
+           <FooterSection/>
+       </div>
     )
 }

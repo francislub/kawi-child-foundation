@@ -184,8 +184,8 @@ export default function FooterSection() {
                 International Offices
               </h4>
               <div className="space-y-3 text-sm text-gray-600 dark:text-gray-300">
-                <p>Denmark Office</p>
-                <p>Switzerland Office</p>
+                <p>Kenya</p>
+                <p>Tanzania</p>
               </div>
             </div>
           </div>

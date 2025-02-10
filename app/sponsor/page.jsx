@@ -55,94 +55,116 @@ export default function ProgramsPage() {
   }, []);
 
   return (
-    <div className="scroll-smooth text-gray-800">
-      <HeaderSection/>
-            {/* <Link href="/">
-          <Image 
-          src={"/images/kawi.jpg"}  
-          height={100} 
-          width={100} 
-          alt="Foundation Logo" 
-          className="rounded-md"
-          />
-      </Link> */}
-      <div className="" id="homeSection">
-        <div className="flex flex-col lg:flex-row background-color lg:gap-5">
-          <div className="">
-            <div>
+      <div className="scroll-smooth text-gray-800">
+        <HeaderSection/>
+
+        {/* Section Container */}
+        <div className="relative bg-gradient-to-b from-[#e3f2fd] to-white mt-2 lg:mt-[120px] px-6 lg:px-20 py-12">
+
+          {/* Decorative Dots */}
+          <div className="absolute top-10 right-10 w-16 h-16 bg-[#1f8cad] opacity-20 rounded-full"></div>
+          <div className="absolute bottom-10 left-10 w-12 h-12 bg-[#ffcc80] opacity-30 rounded-full"></div>
+
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+
+            {/* Image Section */}
+            <div className="flex justify-center lg:w-1/2">
               <Image
-                src={bannerImage}
-                alt="An image"
-                width="800"
-                className="educationImage"
+                  src={bannerImage}
+                  alt="Sponsor a Child"
+                  width={800}
+                  height={500}
+                  className="educationImage rounded-lg shadow-lg border-4 border-[#1f8cad]/30"
               />
             </div>
-          </div>
-          <div className="mx-2">
-            <br />
-            <h1>
-              <span>Sponsor A Child</span>
-            </h1>
-            <h4 className="text-[18px] md:text-1g">
-              Help us keep refugee children in School.<br className="md:hidden block"/>
-              Below is the cost of
-              education per child per year:
-            </h4>
-            <br />
-            <h5 className="text-[18px]">$200 : Covers tuition per child per year </h5>
-            <h5 className="text-[18px]">$50 : Covers meals per child per year </h5>
-            <h5 className="text-[18px]">$20 : Covers books per child per year </h5>
-            <h5 className="text-[18px]">$30 : Covers school uniform per child </h5>
-            <div>
-              <Link href="#aboutSection">
-                <button className="green-button">Sponsor A Child</button>
-              </Link>
+
+            {/* Text Content */}
+            <div className="lg:w-1/2 text-center lg:text-left">
+              <h1 className="text-3xl lg:text-5xl font-extrabold text-[#1f8cad] relative inline-block">
+                Sponsor A Child
+                <span className="block w-24 h-1 bg-[#ff9800] mt-2 mx-auto lg:mx-0"></span>
+              </h1>
+
+              <p className="text-lg lg:text-xl text-gray-700 mt-6 leading-relaxed">
+                Help us keep refugee children in school. Below is the cost of education per child per year:
+              </p>
+
+              {/* Pricing List */}
+              <div className="mt-6 text-lg space-y-3 font-medium">
+                <p className="flex items-center gap-2">
+                  <span className="w-3 h-3 bg-[#1f8cad] rounded-full inline-block"></span>
+                  $200 : Covers tuition per child per year
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="w-3 h-3 bg-[#ff9800] rounded-full inline-block"></span>
+                  $50 : Covers meals per child per year
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="w-3 h-3 bg-[#1f8cad] rounded-full inline-block"></span>
+                  $20 : Covers books per child per year
+                </p>
+                <p className="flex items-center gap-2">
+                  <span className="w-3 h-3 bg-[#ff9800] rounded-full inline-block"></span>
+                  $30 : Covers school uniform per child
+                </p>
+              </div>
+
+              {/* Buttons Section */}
+              <div className="mt-8 flex flex-col lg:flex-row lg:gap-6">
+                <Link href="#aboutSection">
+                  <button
+                      className="bg-[#1f8cad] hover:bg-[#197996] text-white font-semibold px-6 py-3 rounded-full transition duration-300 w-full lg:w-auto">
+                    Sponsor A Child
+                  </button>
+                </Link>
+                <button
+                    className="bg-[#ff9800] hover:bg-[#e68900] text-white font-semibold px-6 py-3 rounded-full transition duration-300 w-full lg:w-auto mt-4 lg:mt-0">
+                  Give to a different cause
+                </button>
+              </div>
             </div>
-            <div>
-              <button className="blue-button">Give to a different cause</button>
-            </div>
-            <br />
-            <br />
           </div>
         </div>
-      </div>
-      {/* Home section ends here */}
 
-      <section className="fullContainer -mt-20" id="aboutSection">
-        <div className="container ">
-          <h2 className="text-center">KAWI CHILD FOUNDATION</h2>
-          <h5 className="text-center">
-            Choose below a child you would like to support
-          </h5>
-          <div className="space-y-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 md:gap-2 justify-center items-center text-center">
-              {children.map((child) => (
-                <div key={child._id}>
-                  <div className="frame text-center h-[280px] background-color flex flex-col justify-center items-center">
-                    <Image
+
+  <section className="fullContainer -mt-20" id="aboutSection">
+    <div className="container ">
+      <h2 className="text-center">KAWI CHILD FOUNDATION</h2>
+      <h5 className="text-center">
+        Choose below a child you would like to support
+      </h5>
+      <div className="space-y-10">
+        <div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 md:gap-2 justify-center items-center text-center">
+          {children.map((child) => (
+              <div key={child._id}>
+                <div className="frame text-center h-[280px] background-color flex flex-col justify-center items-center">
+                  <Image
                       className="rounded-xl w-[150px] h-[150px]"
                       src={child.photo}
                       alt="Education Image"
                       width={100}
                       height={100}
                       objectFit="contain"
-                    />
-                    <Link href={`/sponsorchild/${id=child._id}`}>
-                      <button className="btn btn-primary mt-3 custom-button">
-                        Sponsor
-                      </button>
-                    </Link>
-                    <p>{child.name}</p>
-                  </div>
+                  />
+                  <Link href={`/sponsorchild/${id = child._id}`}>
+                    <button className="btn btn-primary mt-3 custom-button">
+                      Sponsor
+                    </button>
+                  </Link>
+                  <p>{child.name}</p>
                 </div>
-              ))}
-            </div>
-          </div>
+              </div>
+          ))}
         </div>
-      </section>
-      {/* About section ends here */}
-
-      <FooterSection />
+      </div>
     </div>
-  );
+  </section>
+  {/* About section ends here */
+  }
+
+  <FooterSection/>
+</div>
+)
+  ;
 }
