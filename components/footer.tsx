@@ -174,8 +174,8 @@ export default function FooterSection() {
               />
               <ContactInfo 
                 icon={FaGlobe} 
-                text="www.kawi.ac.ug"
-                href="https://www.kawi.ac.ug" 
+                text="https://kawichildfoundation.com/"
+                href="https://kawichildfoundation.com/"
               />
             </div>
 
