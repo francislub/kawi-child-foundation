@@ -51,10 +51,10 @@ export default function JoinUsPage() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            Our foundation is committed to paying particular attention to children and youth within their programs who
-            have suffered from violence and trauma, and aspires to sustain support for young people who have suffered
-            trauma. Kawi Child Foundation also recognizes the power of functional education as a critical part of
-            healing conflict and creating social cohesion in communities.
+            {/*Our foundation is committed to paying particular attention to children and youth within their programs who*/}
+            {/*have suffered from violence and trauma, and aspires to sustain support for young people who have suffered*/}
+            {/*trauma. Kawi Child Foundation also recognizes the power of functional education as a critical part of*/}
+            {/*healing conflict and creating social cohesion in communities.*/}
           </motion.p>
           <Link href="#joinusSection">
             <motion.button

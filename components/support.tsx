@@ -93,7 +93,7 @@ export default function Support() {
               Your support means education for more children
             </h2>
             <p className="text-lg text-blue-100">
-            Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Mbale, Uganda. 
+            Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Luwero, Uganda.
             Dedicated to improving the lives of underprivileged children
             </p>
             <motion.div

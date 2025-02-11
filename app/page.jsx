@@ -35,7 +35,7 @@ export default function HomePage() {
                          animate={{ opacity: 1, y: 0 }}
                          transition={{ duration: 0.8 }}
                      >
-                         Education Unlocks Future
+                         {/*Education Unlocks Future*/}
                      </motion.h1>
 
                      {/* Animated Description */}
@@ -45,8 +45,8 @@ export default function HomePage() {
                          animate={{ opacity: 1, y: 0 }}
                          transition={{ duration: 1, delay: 0.3 }}
                      >
-                         For 15 years, we have committed to providing access to quality education for vulnerable yet talented refugees.
-                         Donate today and help us create more refugee change-makers like Ntakamaze Nziyonvira.
+                         {/*For 15 years, we have committed to providing access to quality education for vulnerable yet talented refugees.*/}
+                         {/*Donate today and help us create more refugee change-makers like Ntakamaze Nziyonvira.*/}
                      </motion.p>
 
                      {/* Animated Button */}

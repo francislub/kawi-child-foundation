@@ -25,35 +25,35 @@ export default function Header() {
 
     const navItems = [
         {
-            title: "ABOUT",
+            title: "ABOUT US",
             href: "/about",
             dropdown: [
-                { title: "WHO WE ARE", href: "/about" },
-                { title: "WHAT WE DO", href: "/wedo" },
+                { title: "OUR STORY", href: "/about" },
+                { title: "OUR MISSION", href: "/wedo" },
                 { title: "OUR IMPACT", href: "/impact" },
-                { title: "OUR LEADERSHIP", href: "/team" },
-                { title: "JOIN OUR TEAM", href: "/joinus" },
+                { title: "OUR TEAM", href: "/team" },
+                { title: "CAREER OPPORTUNITIES", href: "/joinus" },
                 { title: "BENEFICIARIES", href: "/benef" },
             ],
         },
         {
-            title: "PROGRAMS",
+            title: "INITIATIVES",
             href: "/programs",
             dropdown: [
-                { title: "EDUCATION", href: "/education" },
-                { title: "COMMUNITY ENGAGEMENT", href: "/community" },
+                { title: "LEARNING PROGRAMS", href: "/education" },
+                { title: "COMMUNITY INVOLVEMENT", href: "/community" },
             ],
         },
         {
-            title: "CHAPTERS",
+            title: "BRANCHES",
             href: "/chapters",
             dropdown: [
-                { title: "UGANDA", href: "/denmark" },
-                { title: "KENYA", href: "/switzerland" },
-                { title: "TANZANIA", href: "/germany" },
+                { title: "SOUTH AFRICA", href: "/denmark" },
+                { title: "ETHIOPIA DIVISION", href: "/switzerland" },
+                { title: "BANGLADESH UNIT", href: "/germany" },
             ],
         },
-        { title: "GALLERY", href: "/gallery" },
+        { title: "MEDIA", href: "/gallery" },
     ]
 
     const isActive = (href: string) => pathname === href

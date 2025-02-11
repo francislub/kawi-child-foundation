@@ -26,7 +26,7 @@ export default function HomePage() {
                 <div className="container space-y-10">
                     <h1>Education</h1>
                     <p className="text-lg">
-                        Kawi Child Foundation provides access to quality education for conflict affected children living in Uganda.
+                        {/*Kawi Child Foundation provides access to quality education for conflict affected children living in Uganda.*/}
                     </p>
                 </div>
             </div>
