@@ -10,7 +10,7 @@ export default function Sponsor() {
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center mb-8">SPONSOR A CHILD</h2>
                 <p className="text-lg text-center mb-12 max-w-2xl mx-auto">
-                    Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Mbale, Uganda. We are
+                    Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Vvumba - Luwero, Uganda. We are
                     dedicated to improving the lives of underprivileged children through education, healthcare, and community
                     support.
                 </p>
@@ -50,15 +50,16 @@ export default function Sponsor() {
                 {activeTab === "onetime" && (
                     <div className="bg-white p-8 rounded-lg shadow-md max-w-md mx-auto">
                         <h3 className="text-2xl font-semibold mb-4">Make a One-time Donation</h3>
-                        <input
-                            type="number"
-                            placeholder="Enter amount"
-                            className="w-full px-4 py-2 mb-4 border rounded-md"
-                            min="1"
-                        />
-                        <button className="w-full bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+                        {/*<input*/}
+                        {/*    type="number"*/}
+                        {/*    placeholder="Enter amount"*/}
+                        {/*    className="w-full px-4 py-2 mb-4 border rounded-md"*/}
+                        {/*    min="1"*/}
+                        {/*/>*/}
+                        <Link
+                            href={`/paypal`} className="w-full bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
                             Donate Now
-                        </button>
+                        </Link>
                     </div>
                 )}
 

@@ -142,52 +142,61 @@ export default function ProgramsPage({params}) {
                       <div >
                       <div className="flex flex-col lg:flex-row lg:gap-5">
                        {children.map((child) => (
-                        <div className="flex lg:justify-center lg:-mt-20 lg:items-center lg:text-center" key={child._id}>
+                        <div className="flex lg:justify-center lg:items-center lg:text-center" key={child._id}>
                           {/* <Image src={child.photo}  alt={child.name} width={300} height={300} /> */}
                           <Image
                             src={child.photo}
                             alt={child.name}
-                            width={300} height={300}
-                            className="lg:-mt-20"
+                            width={200} height={200}
+                            className="lg:mb-[20px] object-contain rounded-md"
                           />
                         </div>
                         ))}
                         {children.map((child) => (
-                        <div className="key={child._id}">
-                          <br />
-                          <h2 className="text-[20px] lg:text-[30px] md:text-base"> <b>About</b></h2>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Name: </b>
-                            {child.name}
-                          </h5>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Student ID:</b>{child.childId}
-                          </h5>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Gender:</b>{child.gender}
-                          </h5>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Age:</b>{child.age}
-                          </h5>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Class:</b>{child.grade}
-                          </h5>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Nationality:</b>{child.nationality}
-                          </h5>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Parent Status:</b>{child.parentStatus}
-                          </h5>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Level of Need: </b>
-                            {child.levelOfNeed}
-                          </h5>
-                          <h5 className="text-[16px] md:text-base">
-                            <b>Years left to graduate: </b>{child.yearsLeftToGraduate}
-                          </h5>
-                          {/* <h5 className="text-[16px] md:text-base">{child.description}</h5> */}
-                          
-                        </div>
+                            <div className="key={child._id}">
+                              <br/>
+                              <h2 className="text-[20px] lg:text-[30px] md:text-base"><b>About</b></h2>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                <b>Name: </b>
+                                {child.name}
+                              </h5>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                <b>Student ID:</b>{child.childId}
+                              </h5>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                <b>Gender:</b>{child.gender}
+                              </h5>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                <b>Age:</b>{child.age}
+                              </h5>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                <b>Class:</b>{child.grade}
+                              </h5>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                <b>Nationality:</b>{child.nationality}
+                              </h5>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                <b>Parent Status:</b>{child.parentStatus}
+                              </h5>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                <b>Level of Need: </b>
+                                {child.levelOfNeed}
+                              </h5>
+                              <br/>
+                              <h5 className="text-[16px] md:text-base">
+                                {/*<b>Years left to graduate: </b>{child.yearsLeftToGraduate}*/}
+                              </h5>
+                              {/* <h5 className="text-[16px] md:text-base">{child.description}</h5> */}
+
+                            </div>
                         ))}
                       </div>
                       {children.map((child) => (

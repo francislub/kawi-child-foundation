@@ -148,7 +148,7 @@ export default function ProgramsPage() {
                       objectFit="contain"
                   />
                   <Link href={`/sponsorchild/${id = child._id}`}>
-                    <button className="btn btn-primary mt-3 custom-button">
+                    <button className="btn btn-primary mt-3 custom-button bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
                       Sponsor
                     </button>
                   </Link>

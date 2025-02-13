@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Button } from './ui/button'
+import React from "react";
 
 const StatisticPanel = ({ number, text, isPercentage = false }) => (
   <motion.div
@@ -72,28 +73,33 @@ export default function Support() {
         {/* Video and Support Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-xl">
-            <iframe
-              src="https://www.youtube.com/embed/5rsgHbyl02Y?si=tp-F34eVxdf-RQ2v"
-              title="Kawi Child Organization "
-              className="absolute inset-0 w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-            {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/5rsgHbyl02Y?si=tp-F34eVxdf-RQ2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+
+              <img
+                  src="/images/pay.jpg"
+                  alt="About Kawi Child Foundation"
+                  className="rounded-lg shadow-lg w-full object-cover"
+              />
+            {/*<iframe*/}
+            {/*  src="https://www.youtube.com/embed/5rsgHbyl02Y?si=tp-F34eVxdf-RQ2v"*/}
+            {/*  title="Kawi Child Organization "*/}
+            {/*  className="absolute inset-0 w-full h-full"*/}
+            {/*  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
+            {/*  allowFullScreen*/}
+            {/*/>*/}
           </div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="space-y-6 p-6 lg:p-8 bg-blue-600 text-white rounded-xl"
+              initial={{opacity: 0, x: 50}}
+              whileInView={{opacity: 1, x: 0}}
+              viewport={{once: true}}
+              transition={{duration: 0.6}}
+              className="space-y-6 p-6 lg:p-8 bg-blue-600 text-white rounded-xl"
           >
             <h2 className="text-3xl md:text-4xl font-bold">
               Your support means education for more children
             </h2>
             <p className="text-lg text-blue-100">
-            Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Luwero, Uganda.
+              Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Vvumba - Luwero, Uganda.
             Dedicated to improving the lives of underprivileged children
             </p>
             <motion.div

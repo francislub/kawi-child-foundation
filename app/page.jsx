@@ -101,8 +101,7 @@ export default function HomePage() {
                            transition={{duration: 0.8, delay: 0.3}}
                        >
                            <p>
-                               Kawi Child Foundation is a family-based, non-profit organization established in 2023 in
-                               Luwero, Uganda. Dedicated to improving the lives of underprivileged children, the foundation focuses on
+                               Kawi Child Foundation is a family-based, non-profit organization established in 2023 in Vvumba - Luwero, Uganda. Dedicated to improving the lives of underprivileged children, the foundation focuses on
                                providing access
                                to quality education, healthcare, and essential resources.
                            </p>
