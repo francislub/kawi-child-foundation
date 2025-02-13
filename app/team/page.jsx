@@ -18,7 +18,7 @@ export default function ProgramsPage() {
 
     const fetchChapterTeam = async () => {
         try {
-        const response = await fetch(`https://kawi-server-production.up.railway.appapi/v1/leaders`);
+        const response = await fetch(`https://kawi-server-production.up.railway.app/api/v1/leaders`);
         const data = await response.json();
         const leadershipTeam = data.filter(item => item.leaderShipType === "leadership-team");
         const boardmember = data.filter(item => item.leaderShipType === "board-member");
