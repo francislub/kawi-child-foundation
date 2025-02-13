@@ -46,7 +46,7 @@ export default function ProgramsPage() {
             {/* Home section ends here */}
 
             {/* <section className="fullContainer" id="aboutSection"> */}
-                <div className="container mt-6 lg:mt-[45px]">
+                <div className="container mt-6 lg:mt-[60px]">
                     <h2 className="sectionTitle text-[#1f8cad]">
                        Board Members
                     </h2>
