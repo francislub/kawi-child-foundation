@@ -25,6 +25,44 @@ export default function ProgramsPage({params}) {
   const [children, setChildren] = useState([]);
   const [error, setError] = useState(null);
 
+
+  const [step, setStep] = useState(1)
+  const [frequency, setFrequency] = useState("one-time")
+  const [amount, setAmount] = useState("50")
+  const [studentName, setStudentName] = useState("")
+  const [comment, setComment] = useState("")
+  const [showComment, setShowComment] = useState(false)
+  const [paymentMethod, setPaymentMethod] = useState("")
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    isAnonymous: false,
+    email: "",
+    phone: "",
+    country: "Uganda",
+    address1: "",
+    address2: "",
+    city: "",
+    state: "",
+  })
+
+  const handleAmountClick = (value) => {
+    setAmount(value);
+    const input = document.getElementById("customAmount");
+    if (input) input.value = value;
+  };
+
+  const handleCustomAmount = (e) => {
+    setAmount(e.target.value);
+  };
+  const handleNext = () => {
+    if (step < 3) setStep(step + 1)
+  }
+
+  const handleBack = () => {
+    if (step > 1) setStep(step - 1)
+  }
+
   useEffect(() => {
     const fetchChildren = async () => {
       try {
@@ -140,6 +178,7 @@ export default function ProgramsPage({params}) {
                     <div className="flex flex-col lg:flex-row justify-between">
                       <br />
                       <div >
+
                       <div className="flex flex-col lg:flex-row lg:gap-5">
                        {children.map((child) => (
                         <div className="flex lg:justify-center lg:items-center lg:text-center" key={child._id}>
@@ -208,126 +247,380 @@ export default function ProgramsPage({params}) {
                             </Link>
                           </div>
                         </div>
-                        
+
                       ))}
                       </div>
                       {children.map((child) => (
-                      <div className="pt-3 key={child._id}">
-                          <h2>Sponsor: {child.name}</h2>
-                        <div className="frame">
-                          <div className="frame1 lg:text-center">
-                            <div className="background-color1">
-                              <div className="px-2">
-                                <h4>Choose amount</h4>
-                              </div>
-                            </div>
-                              <h2 className="text-[26px] px-2">Sponsor {child.name}</h2>
-                            <h5 className="px-2">
-                              <b>with</b>
-                            </h5>
+                          <div className="pt-3 key={child._id}">
+                            <h2>Sponsor: {child.name}</h2>
 
-                            <div className="">
-                              <div>
-                                {/* <Link href='#'> */}
-                                <h3 className="text-[24px] px-2">USD$ 50</h3>
-                                <PayPalScriptProvider
-                                  options={{
-                                    clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,
-                                  }}
-                                >
-                                  {/* <PayPalScriptProvider > */}
-                                  <PayPalButtons
-                                    style={{
-                                      color: "blue",
-                                      layout: "horizontal",
-                                    }}
-                                    createOrder={async () => {
-                                      const res = await fetch("api/checkout", {
-                                        method: "POST",
-                                      });
-                                      const order = await res.json();
-                                      console.log(order);
-                                      return order.id;
-                                    }}
-                                    onApprove={(data, actions) => {
-                                      console.log(data);
-                                    }}
-                                    onCancel={(data) => {
-                                      console.log("Cancelled:", data);
-                                    }}
-                                  />
-                                </PayPalScriptProvider>
-                                {/* </Link> */}
+                            <div className="max-w-[860px] mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                              {/* Header */}
+                              <div className="bg-[#0A1F5C] text-white p-4 flex items-center justify-between">
+                                <div className="flex items-center gap-2">
+                                  {step > 1 && (
+                                      <button onClick={handleBack} className="text-white">
+                                        ← Back
+                                      </button>
+                                  )}
+                                  <h2 className="text-lg font-medium">
+                                    {step === 1 ? "Choose amount" : step === 2 ? "Payment" : "Information"}
+                                  </h2>
+                                </div>
+                                <div className="flex gap-2">
+                                  {[1, 2, 3, 4].map((i) => (
+                                      <div key={i}
+                                           className={`w-2 h-2 rounded-full ${i === step ? "bg-white" : "bg-white/50"}`}/>
+                                  ))}
+                                </div>
                               </div>
-                              <div>
-                                {/* <Link href='#'> */}
-                                <h3 className="text-[24px] px-2">USD$ 100</h3>
-                                <PayPalScriptProvider
-                                  options={{
-                                    clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,
-                                  }}
+
+                              <div className="p-6">
+                                {step === 1 && (
+                                    <>
+                                      <h1 className="text-2xl font-semibold text-center mb-6">Sponsor a Child/Youth</h1>
+
+                                      <div className="flex gap-2 mb-8 justify-center">
+                                        {["one-time", "monthly", "annually"].map((freq) => (
+                                            <button
+                                                key={freq}
+                                                onClick={() => setFrequency(freq)}
+                                                className={`px-4 py-2 rounded-full text-sm capitalize ${
+                                                    frequency === freq ? "bg-[#0A1F5C] text-white" : "border border-gray-300"
+                                                }`}
+                                            >
+                                              {freq.replace("-", " ")}
+                                            </button>
+                                        ))}
+                                      </div>
+
+                                      <div className="grid grid-cols-3 gap-4 mb-6">
+                                        {["50", "100", "150"].map((value) => (
+                                            <button
+                                                key={value}
+                                                onClick={() => handleAmountClick(value)}
+                                                className={`py-3 rounded-full ${
+                                                    amount === value ? "border-2 border-[#0A1F5C] text-[#0A1F5C]" : "border border-gray-300"
+                                                }`}
+                                            >
+                                              <span className="text-sm">USD$</span> {value}
+                                            </button>
+                                        ))}
+                                      </div>
+
+                                      <div className="mb-6">
+                                        <input
+                                            id="customAmount"
+                                            type="text"
+                                            value={`USD$ ${amount}`}
+                                            onChange={handleCustomAmount}
+                                            className="w-full p-3 border border-gray-300 rounded-lg"
+                                        />
+                                      </div>
+
+                                      <div className="mb-4">
+                                        <input
+                                            type="text"
+                                            placeholder="Student Name"
+                                            value={studentName}
+                                            onChange={(e) => setStudentName(e.target.value)}
+                                            className="w-full p-3 border border-gray-300 rounded-lg"
+                                        />
+                                        {!studentName &&
+                                            <p className="text-red-500 text-sm mt-1">This field is required</p>}
+                                      </div>
+
+                                      <div className="mb-4">
+                                        <label className="flex items-center gap-2">
+                                          <input
+                                              type="checkbox"
+                                              checked={showComment}
+                                              onChange={(e) => setShowComment(e.target.checked)}
+                                              className="rounded border-gray-300"
+                                          />
+                                          <span className="text-gray-600">Write us a comment</span>
+                                        </label>
+                                      </div>
+
+                                      {showComment && (
+                                          <div className="mb-8">
+                                            <textarea
+                                                value={comment}
+                                                onChange={(e) => setComment(e.target.value)}
+                                                placeholder="Your comment"
+                                                className="w-full p-3 border border-gray-300 rounded-lg min-h-[100px]"
+                                            />
+                                          </div>
+                                      )}
+                                    </>
+                                )}
+
+                                {step === 2 && (
+                                    <>
+                                      <h2 className="text-lg font-medium mb-6 text-center">Choose a payment option:</h2>
+                                      <div className="space-y-4">
+                                        <button
+                                            onClick={() => setPaymentMethod("paypal")}
+                                            className="w-full p-4 text-left border rounded-lg hover:bg-gray-50 flex items-center gap-2"
+                                        >
+                                          <img src="/paypal-logo.png" alt="PayPal" className="h-6"/>
+                                          PayPal
+                                        </button>
+                                        <button
+                                            onClick={() => setPaymentMethod("card")}
+                                            className="w-full p-4 text-left border rounded-lg hover:bg-gray-50 flex items-center gap-2"
+                                        >
+                                          <span className="text-gray-600">💳</span>
+                                          Credit/Debit Card
+                                        </button>
+                                        <button
+                                            onClick={() => setPaymentMethod("bank")}
+                                            className="w-full p-4 text-left border rounded-lg hover:bg-gray-50 flex items-center gap-2"
+                                        >
+                                          <span className="text-gray-600">🏦</span>
+                                          Bank Transfer
+                                        </button>
+                                      </div>
+                                    </>
+                                )}
+
+                                {step === 3 && (
+                                    <div className="space-y-4">
+                                      <div className="grid grid-cols-2 gap-4">
+                                        <input
+                                            type="text"
+                                            placeholder="First Name"
+                                            value={formData.firstName}
+                                            onChange={(e) => setFormData({...formData, firstName: e.target.value})}
+                                            className="p-3 border border-gray-300 rounded-lg"
+                                        />
+                                        <input
+                                            type="text"
+                                            placeholder="Last Name"
+                                            value={formData.lastName}
+                                            onChange={(e) => setFormData({...formData, lastName: e.target.value})}
+                                            className="p-3 border border-gray-300 rounded-lg"
+                                        />
+                                      </div>
+
+                                      <label className="flex items-center gap-2">
+                                        <input
+                                            type="checkbox"
+                                            checked={formData.isAnonymous}
+                                            onChange={(e) => setFormData({...formData, isAnonymous: e.target.checked})}
+                                            className="rounded border-gray-300"
+                                        />
+                                        <span className="text-gray-600">Make donation anonymous</span>
+                                      </label>
+
+                                      <input
+                                          type="email"
+                                          placeholder="Email"
+                                          value={formData.email}
+                                          onChange={(e) => setFormData({...formData, email: e.target.value})}
+                                          className="w-full p-3 border border-gray-300 rounded-lg"
+                                      />
+
+                                      <input
+                                          type="tel"
+                                          placeholder="Phone"
+                                          value={formData.phone}
+                                          onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                                          className="w-full p-3 border border-gray-300 rounded-lg"
+                                      />
+
+                                      <select
+                                          value={formData.country}
+                                          onChange={(e) => setFormData({...formData, country: e.target.value})}
+                                          className="w-full p-3 border border-gray-300 rounded-lg"
+                                      >
+                                        <option value="Uganda">Uganda</option>
+                                        {/* Add more countries as needed */}
+                                      </select>
+
+                                      <input
+                                          type="text"
+                                          placeholder="Address"
+                                          value={formData.address1}
+                                          onChange={(e) => setFormData({...formData, address1: e.target.value})}
+                                          className="w-full p-3 border border-gray-300 rounded-lg"
+                                      />
+
+                                      <input
+                                          type="text"
+                                          placeholder="Address 2"
+                                          value={formData.address2}
+                                          onChange={(e) => setFormData({...formData, address2: e.target.value})}
+                                          className="w-full p-3 border border-gray-300 rounded-lg"
+                                      />
+
+                                      <input
+                                          type="text"
+                                          placeholder="City"
+                                          value={formData.city}
+                                          onChange={(e) => setFormData({...formData, city: e.target.value})}
+                                          className="w-full p-3 border border-gray-300 rounded-lg"
+                                      />
+
+                                      <input
+                                          type="text"
+                                          placeholder="State / Province"
+                                          value={formData.state}
+                                          onChange={(e) => setFormData({...formData, state: e.target.value})}
+                                          className="w-full p-3 border border-gray-300 rounded-lg"
+                                      />
+                                    </div>
+                                )}
+
+                                {paymentMethod === "paypal" && (
+                                    <div className="mt-6">
+                                      <PayPalScriptProvider
+                                          options={{
+                                            clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,
+                                          }}
+                                      >
+                                        <PayPalButtons
+                                            style={{
+                                              color: "blue",
+                                              layout: "horizontal",
+                                            }}
+                                            createOrder={async () => {
+                                              const res = await fetch(`/api/checkout-${amount}`, {
+                                                method: "POST",
+                                              })
+                                              const order = await res.json()
+                                              return order.id
+                                            }}
+                                            onApprove={(data, actions) => {
+                                              console.log(data)
+                                            }}
+                                            onCancel={(data) => {
+                                              console.log("Cancelled:", data)
+                                            }}
+                                        />
+                                      </PayPalScriptProvider>
+                                    </div>
+                                )}
+
+                                <button
+                                    onClick={handleNext}
+                                    className="w-full py-3 bg-[#FFC107] text-black rounded-full mt-6 font-medium hover:bg-[#FFB300] transition-colors"
                                 >
-                                  {/* <PayPalScriptProvider > */}
-                                  <PayPalButtons
-                                    style={{
-                                      color: "blue",
-                                      layout: "horizontal",
-                                    }}
-                                    createOrder={async () => {
-                                      const res = await fetch("api/checkout-100", {
-                                        method: "POST",
-                                      });
-                                      const order = await res.json();
-                                      console.log(order);
-                                      return order.id;
-                                    }}
-                                    onApprove={(data, actions) => {
-                                      console.log(data);
-                                    }}
-                                    onCancel={(data) => {
-                                      console.log("Cancelled:", data);
-                                    }}
-                                  />
-                                </PayPalScriptProvider>
-                                {/* </Link> */}
-                              </div>
-                              <div>
-                                {/* <Link href='#'> */}
-                                <h3 className="text-[24px] px-2">USD$ 150</h3>
-                                <PayPalScriptProvider
-                                  options={{
-                                    clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,
-                                  }}
-                                >
-                                  {/* <PayPalScriptProvider > */}
-                                  <PayPalButtons
-                                    style={{
-                                      color: "blue",
-                                      layout: "horizontal",
-                                    }}
-                                    createOrder={async () => {
-                                      const res = await fetch("api/checkout-150", {
-                                        method: "POST",
-                                      });
-                                      const order = await res.json();
-                                      console.log(order);
-                                      return order.id;
-                                    }}
-                                    onApprove={(data, actions) => {
-                                      console.log(data);
-                                    }}
-                                    onCancel={(data) => {
-                                      console.log("Cancelled:", data);
-                                    }}
-                                  />
-                                </PayPalScriptProvider>
-                                {/* </Link> */}
+                                  Next →
+                                </button>
+
+                                {step === 2 &&
+                                    <p className="text-center text-sm text-gray-500 mt-4">Powered by Donorbox</p>}
                               </div>
                             </div>
+                            {/*end */}
+
+
+                            {/*<div className="frame">*/}
+                            {/*  <div className="frame1 lg:text-center">*/}
+                            {/*    <div className="background-color1">*/}
+                            {/*      <div className="px-2">*/}
+                            {/*        <h4>Choose amount</h4>*/}
+                            {/*      </div>*/}
+                            {/*    </div>*/}
+                            {/*    <h2 className="text-[26px] px-2">Sponsor {child.name}</h2>*/}
+                            {/*    <h5 className="px-2">*/}
+                            {/*      <b>with</b>*/}
+                            {/*    </h5>*/}
+
+                            {/*    <div className="">*/}
+                            {/*      <div>*/}
+                            {/*        <h3 className="text-[24px] px-2">USD$ 50</h3>*/}
+                            {/*        <PayPalScriptProvider*/}
+                            {/*            options={{*/}
+                            {/*              clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,*/}
+                            {/*            }}*/}
+                            {/*        >*/}
+                            {/*          <PayPalButtons*/}
+                            {/*              style={{*/}
+                            {/*                color: "blue",*/}
+                            {/*                layout: "horizontal",*/}
+                            {/*              }}*/}
+                            {/*              createOrder={async () => {*/}
+                            {/*                const res = await fetch("api/checkout", {*/}
+                            {/*                  method: "POST",*/}
+                            {/*                });*/}
+                            {/*                const order = await res.json();*/}
+                            {/*                console.log(order);*/}
+                            {/*                return order.id;*/}
+                            {/*              }}*/}
+                            {/*              onApprove={(data, actions) => {*/}
+                            {/*                console.log(data);*/}
+                            {/*              }}*/}
+                            {/*              onCancel={(data) => {*/}
+                            {/*                console.log("Cancelled:", data);*/}
+                            {/*              }}*/}
+                            {/*          />*/}
+                            {/*        </PayPalScriptProvider>*/}
+                            {/*      </div>*/}
+                            {/*      <div>*/}
+                            {/*        <h3 className="text-[24px] px-2">USD$ 100</h3>*/}
+                            {/*        <PayPalScriptProvider*/}
+                            {/*            options={{*/}
+                            {/*              clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,*/}
+                            {/*            }}*/}
+                            {/*        >*/}
+                            {/*          <PayPalButtons*/}
+                            {/*              style={{*/}
+                            {/*                color: "blue",*/}
+                            {/*                layout: "horizontal",*/}
+                            {/*              }}*/}
+                            {/*              createOrder={async () => {*/}
+                            {/*                const res = await fetch("api/checkout-100", {*/}
+                            {/*                  method: "POST",*/}
+                            {/*                });*/}
+                            {/*                const order = await res.json();*/}
+                            {/*                console.log(order);*/}
+                            {/*                return order.id;*/}
+                            {/*              }}*/}
+                            {/*              onApprove={(data, actions) => {*/}
+                            {/*                console.log(data);*/}
+                            {/*              }}*/}
+                            {/*              onCancel={(data) => {*/}
+                            {/*                console.log("Cancelled:", data);*/}
+                            {/*              }}*/}
+                            {/*          />*/}
+                            {/*        </PayPalScriptProvider>*/}
+                            {/*      </div>*/}
+                            {/*      <div>*/}
+                            {/*        <h3 className="text-[24px] px-2">USD$ 150</h3>*/}
+                            {/*        <PayPalScriptProvider*/}
+                            {/*            options={{*/}
+                            {/*              clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID,*/}
+                            {/*            }}*/}
+                            {/*        >*/}
+                            {/*          <PayPalButtons*/}
+                            {/*              style={{*/}
+                            {/*                color: "blue",*/}
+                            {/*                layout: "horizontal",*/}
+                            {/*              }}*/}
+                            {/*              createOrder={async () => {*/}
+                            {/*                const res = await fetch("api/checkout-150", {*/}
+                            {/*                  method: "POST",*/}
+                            {/*                });*/}
+                            {/*                const order = await res.json();*/}
+                            {/*                console.log(order);*/}
+                            {/*                return order.id;*/}
+                            {/*              }}*/}
+                            {/*              onApprove={(data, actions) => {*/}
+                            {/*                console.log(data);*/}
+                            {/*              }}*/}
+                            {/*              onCancel={(data) => {*/}
+                            {/*                console.log("Cancelled:", data);*/}
+                            {/*              }}*/}
+                            {/*          />*/}
+                            {/*        </PayPalScriptProvider>*/}
+                            {/*      </div>*/}
+                            {/*    </div>*/}
+                            {/*  </div>*/}
+                            {/*</div>*/}
+                            {/*<br/>*/}
                           </div>
-                        </div>
-                        <br />
-                      </div>
                       ))}
                     </div>
                   </div>
@@ -339,7 +632,7 @@ export default function ProgramsPage({params}) {
       </section>
       {/* About section ends here */}
 
-      <FooterSection />
+      <FooterSection/>
     </div>
   );
 }
