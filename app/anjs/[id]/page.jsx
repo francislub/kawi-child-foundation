@@ -20,7 +20,7 @@ export default function HomePage({params}) {
 
     const fetchChapterSwitzerland = async () => {
         try {
-        const response = await fetch('https://kawi-dashboard-server.onrender.com/api/v1/chapter-switzerland');
+        const response = await fetch('https://kawi-server-production.up.railway.app/api/v1/chapter-switzerland');
         const data = await response.json();
         const filteredData = data.filter(item => item._id === params.id);
         // console.log(filteredData);

@@ -29,7 +29,7 @@ export default function ProgramsPage({params}) {
     const fetchChildren = async () => {
       try {
         const response = await fetch(
-          "https://kawi-dashboard-server.onrender.com/api/v1/children",
+          "https://kawi-server-production.up.railway.app/api/v1/children",
           {
             method: "GET",
             headers: {
