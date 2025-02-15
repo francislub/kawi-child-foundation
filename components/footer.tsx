@@ -169,8 +169,13 @@ export default function FooterSection() {
               />
               <ContactInfo 
                 icon={FaEnvelope} 
-                text="Kawichildfoundationuganda5@gmail.com"
+                text="kawichildfoundationuganda5@gmail.com"
                 href="mailto:Kawichildfoundationuganda5@gmail.com" 
+              />
+              <ContactInfo 
+                icon={FaEnvelope} 
+                text="kawichildfoundationuganda@gmail.com"
+                href="mailto:kawichildfoundationuganda@gmail.com" 
               />
               <ContactInfo 
                 icon={FaGlobe} 
