@@ -167,11 +167,11 @@ export default function FooterSection() {
                 text="+256-760-079-506"
                 href="tel:+256760079506" 
               />
-              <ContactInfo 
+              {/* <ContactInfo 
                 icon={FaEnvelope} 
                 text="kawichildfoundationuganda5@gmail.com"
                 href="mailto:Kawichildfoundationuganda5@gmail.com" 
-              />
+              /> */}
               <ContactInfo 
                 icon={FaEnvelope} 
                 text="kawichildfoundationuganda@gmail.com"
